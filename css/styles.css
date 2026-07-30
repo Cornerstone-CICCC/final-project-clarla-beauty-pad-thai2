@@ -1,3 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Baskervville;
+}
 
+a {
+  text-decoration: none;
+  color: #725A58;
+}
+
+nav {
+  background-color: #F8F6F4;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+nav a {
+  font-size: 20px;
+}
+nav .line {
+  height: 20px;
+  width: 0;
+  border: 1px solid #E3B6B1;
+}
+nav .left-side,
+nav .right-side {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 460px;
+}
+nav .left-side {
+  margin-left: 30px;
+}
+nav .right-side {
+  margin-right: 30px;
+}
+nav .header-logo {
+  width: 100px;
+  height: auto;
+  margin: 15px 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.bg-photo {
+  width: 100%;
+  max-width: 100%;
+  min-height: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.bg-container {
+  position: relative;
+  color: white;
+}
+.bg-container .bg-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.bg-container .bg-content .img {
+  height: auto;
+}
+.bg-container .bg-content .intro {
+  font-family: Montserrat;
+  text-align: center;
+}
+.bg-container .bg-content .consultation-btn {
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  border: solid white 1px;
+  padding: 16px 24px;
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
