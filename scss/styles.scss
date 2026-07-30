@@ -106,3 +106,49 @@ nav {
 
     }
 }
+
+.aboutArtist{
+    background-color: #F8F6F4;
+    padding: 20px 0;
+
+    .about-top{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .intro-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        
+        h2{
+            font-size: 48px;
+            color: #191919;
+            width: 499px;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 18px;
+            font-family: Montserrat;
+            width: 437px;
+            color: #535353;
+        }
+
+        img{
+            width: 10%;
+            height: auto;
+            
+        }
+
+        .aboutMeBtn{
+            border: #5E4A49 solid 1px;
+            padding: 24px 35px;
+            margin-top: 20px;
+            width: 160px;
+            text-align: center;
+        }
+    }
+}
