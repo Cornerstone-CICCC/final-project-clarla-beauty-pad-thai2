@@ -243,6 +243,55 @@ nav .header-logo {
   font-weight: 400;
 }
 
+.makeup-hairstyle {
+  background-color: #F8F6F4;
+  min-height: 1524px;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.makeup-hairstyle .makeup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.makeup-hairstyle .makeup-container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.13rem;
+  text-align: center;
+  color: #725A58;
+}
+.makeup-hairstyle .makeup-container .pink-border {
+  width: 200px;
+  border: #E3B6B1 1px solid;
+}
+.makeup-hairstyle .makeup-container p {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Montserrat;
+  color: #191919;
+  text-align: center;
+}
+.makeup-hairstyle .makeup-container a {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 43px;
+  color: #5E4A49;
+  font-size: 18px;
+}
+.makeup-hairstyle .makeup-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   nav {
     padding: 32px 0;
