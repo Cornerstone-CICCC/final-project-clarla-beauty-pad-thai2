@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Baskervville;
+    font-family: Baskervville, serif;
+    box-sizing: border-box;
     // background-color: red;
 }
 
@@ -10,52 +11,44 @@ a {
     color: #725A58;
 }
 
-
-
 nav {
     background-color: #F8F6F4;
-    padding: 32px 0;
+    height: 120px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 0 16px;
 
-    a {
-        font-size: 20px;
+    .hamburger-btn {
+        height: 27px;
+        width: 18px;
 
-    }
+        border: none;
+        background: transparent;
+        padding: 0;
 
-    .line {
-        height: 20px;
-        width: 0;
-        border: 1px solid #E3B6B1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #725A58;
+            border-radius: 2px;
+        }
     }
 
     .left-side,
-    .right-side {
-        display: flex;
-        justify-content: space-between;
-
-        flex: 1;
-        max-width: 460px;
-    }
-
-    .left-side {
-        margin-left: 30px;
-    }
-
-    .right-side {
-        margin-right: 30px;
+    .right-side-text {
+        display: none;
     }
 
     .header-logo {
-        width: 100px;
+        width: 95.6px;
         height: auto;
-        margin: 15px 20px;
-    }
-
-    a:hover {
-        text-decoration: underline;
     }
 }
 
@@ -65,6 +58,7 @@ nav {
     min-height: 500px;
     height: auto;
     object-fit: cover;
+    object-position: center;
 }
 
 .bg-container {
@@ -76,26 +70,31 @@ nav {
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+
         display: flex;
         flex-direction: column;
-      
+
         align-items: center;
         gap: 20px;
 
-        .img{
+        .img {
+            width: 295px;
             height: auto;
         }
 
-        .intro{
-           font-family:Montserrat;
-           text-align: center;
-           
+        .intro {
+            font-family: Montserrat;
+            text-align: center;
+            font-weight: 300;
+            font-size: 16x;
+            line-height: 160%;
+
+
         }
 
         .consultation-btn {
             font-weight: 300;
-            font-size: 18px;
+            font-size: 16px;
             color: white;
 
             border: solid white 1px;
@@ -107,48 +106,333 @@ nav {
     }
 }
 
-.aboutArtist{
+.aboutArtist {
     background-color: #F8F6F4;
     padding: 20px 0;
 
-    .about-top{
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-    }
-
-    .intro-area{
+    .about-top {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        
-        h2{
-            font-size: 48px;
-            color: #191919;
-            width: 499px;
-            font-weight: 400;
-        }
+        gap: 20px;
+        align-items: center;
 
-        p{
-            font-size: 18px;
-            font-family: Montserrat;
-            width: 437px;
-            color: #535353;
-        }
-
-        img{
-            width: 10%;
+        .black-logo {
+            width: 30px;
             height: auto;
-            
         }
 
-        .aboutMeBtn{
-            border: #5E4A49 solid 1px;
-            padding: 24px 35px;
-            margin-top: 20px;
-            width: 160px;
-            text-align: center;
+        .pinklogo {
+            display: none;
+
+        }
+
+        .intro-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            h2 {
+                font-size: 32px;
+                color: #191919;
+                line-height: 130%;
+                font-weight: 400;
+                text-align: center;
+                max-width: 325px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: Montserrat;
+                line-height: 160%;
+                font-weight: 300;
+                text-align: center;
+                color: #535353;
+                max-width: 325px;
+            }
+
+            .grayLogo {
+                width: 165px;
+                height: auto;
+                margin: 20px 0;
+            }
+
+            .aboutMeBtn {
+                border: #5E4A49 solid 1px;
+                padding: 20px 40px;
+                width: 160px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+        }
+
+        .title-with-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+
+            width: 100%;
+            max-width: 328px;
+
+            font-size: 16px;
+            color: #888888;
+
+            &::before,
+            &::after {
+                content: "";
+                flex: 1;
+                border-bottom: #888888 solid 0.5px;
+            }
+
+            span {
+                padding: 0 12px;
+                white-space: nowrap;
+            }
+
+
+        }
+
+        .brand-logos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            width: 276px;
+            justify-items: center;
+            align-items: center;
+            gap: 30px 50px;
+
+            width: 100%;
+            max-width: 360px;
+            margin: 20px 0;
+
+            img {
+                opacity: 60%;
+                max-width: 95px;
+                height: auto;
+                object-fit: contain;
+
+            }
+        }
+
+    }
+
+
+}
+
+.you-are-a-star {
+    background-color: #FAE9E7;
+    min-height: 867px;
+    padding: 40px 16px 60px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+    
+    h2 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0.13rem;
+        text-align: center;
+        color: #725A58;
+    }
+
+    .pink-border {
+        width: 200px;
+        border: #E3B6B1 1px solid;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 160%;
+        font-family: Montserrat;
+        color: #191919;
+        text-align: center;
+    }
+
+    a {
+        border: #5E4A49 solid 0.8px;
+        padding: 20px 43px;
+        color: #5E4A49;
+        font-size: 18px;
+    }
+
+    .work-pictures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+
+        img {
+            width: 157px;
+            height: 230px;
+        }
+
+
+    }
+
+    .customer-review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        
+        p {
+        font-family: Baskervville;
+        font-size: 20px;
+        line-height: 150%;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 47px;
+
+            .arrow {
+                color: #725A58;
+                font-size: 50px;
+                font-weight: 400;
+            }
         }
     }
+
+   
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        a {
+            font-size: 20px;
+
+        }
+
+        .line {
+            height: 20px;
+            width: 0;
+            border: 1px solid #E3B6B1;
+        }
+
+        .hamburger-btn {
+            display: none;
+        }
+
+        .left-side,
+        .right-side {
+            display: flex;
+            justify-content: space-between;
+
+            flex: 1;
+            max-width: 460px;
+        }
+
+        .right-side-text {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-side {
+            margin-left: 30px;
+        }
+
+        .right-side {
+            margin-right: 30px;
+        }
+
+        .header-logo {
+            width: 100px;
+            height: auto;
+            margin: 15px 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    .bg-container {
+
+        .bg-photo {
+            width: 100%;
+            height: 625px;
+            object-fit: cover;
+
+        }
+
+        img {
+            width: 607px;
+            height: auto;
+        }
+
+        .intro {
+            font-family: Montserrat;
+            text-align: center;
+            width: auto;
+            margin-top: 10px;
+            white-space: nowrap;
+
+        }
+
+    }
+
+    .aboutArtist {
+        background-color: #F8F6F4;
+        padding: 20px 0;
+
+        .about-top {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .intro-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            h2 {
+                font-size: 32px;
+                width: 499px;
+
+            }
+
+            p {
+                font-size: 16px;
+                width: 437px;
+            }
+
+            .pinklogo {
+                width: 10%;
+                height: auto;
+
+            }
+
+
+            .aboutMeBtn {
+                border: #5E4A49 solid 1px;
+                padding: 24px 35px;
+                margin-top: 20px;
+                width: 160px;
+                text-align: center;
+            }
+        }
+    }
+
+
+
 }

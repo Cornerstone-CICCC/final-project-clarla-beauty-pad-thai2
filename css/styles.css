@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Baskervville;
+  font-family: Baskervville, serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -11,40 +12,36 @@ a {
 
 nav {
   background-color: #F8F6F4;
-  padding: 32px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-nav a {
-  font-size: 20px;
-}
-nav .line {
-  height: 20px;
-  width: 0;
-  border: 1px solid #E3B6B1;
-}
-nav .left-side,
-nav .right-side {
+  height: 120px;
   display: flex;
   justify-content: space-between;
-  flex: 1;
-  max-width: 460px;
+  align-items: center;
+  padding: 0 16px;
 }
-nav .left-side {
-  margin-left: 30px;
+nav .hamburger-btn {
+  height: 27px;
+  width: 18px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-nav .right-side {
-  margin-right: 30px;
+nav .hamburger-btn span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #725A58;
+  border-radius: 2px;
+}
+nav .left-side,
+nav .right-side-text {
+  display: none;
 }
 nav .header-logo {
-  width: 100px;
+  width: 95.6px;
   height: auto;
-  margin: 15px 20px;
-}
-nav a:hover {
-  text-decoration: underline;
 }
 
 .bg-photo {
@@ -53,6 +50,7 @@ nav a:hover {
   min-height: 500px;
   height: auto;
   object-fit: cover;
+  object-position: center;
 }
 
 .bg-container {
@@ -70,15 +68,19 @@ nav a:hover {
   gap: 20px;
 }
 .bg-container .bg-content .img {
+  width: 295px;
   height: auto;
 }
 .bg-container .bg-content .intro {
   font-family: Montserrat;
   text-align: center;
+  font-weight: 300;
+  font-size: 16x;
+  line-height: 160%;
 }
 .bg-container .bg-content .consultation-btn {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   border: solid white 1px;
   padding: 16px 24px;
@@ -91,37 +93,252 @@ nav a:hover {
 }
 .aboutArtist .about-top {
   display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-.aboutArtist .intro-area {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  align-items: center;
 }
-.aboutArtist .intro-area h2 {
-  font-size: 48px;
-  color: #191919;
-  width: 499px;
-  font-weight: 400;
-}
-.aboutArtist .intro-area p {
-  font-size: 18px;
-  font-family: Montserrat;
-  width: 437px;
-  color: #535353;
-}
-.aboutArtist .intro-area img {
-  width: 10%;
+.aboutArtist .about-top .black-logo {
+  width: 30px;
   height: auto;
 }
-.aboutArtist .intro-area .aboutMeBtn {
+.aboutArtist .about-top .pinklogo {
+  display: none;
+}
+.aboutArtist .about-top .intro-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.aboutArtist .about-top .intro-area h2 {
+  font-size: 32px;
+  color: #191919;
+  line-height: 130%;
+  font-weight: 400;
+  text-align: center;
+  max-width: 325px;
+}
+.aboutArtist .about-top .intro-area p {
+  font-size: 16px;
+  font-family: Montserrat;
+  line-height: 160%;
+  font-weight: 300;
+  text-align: center;
+  color: #535353;
+  max-width: 325px;
+}
+.aboutArtist .about-top .intro-area .grayLogo {
+  width: 165px;
+  height: auto;
+  margin: 20px 0;
+}
+.aboutArtist .about-top .intro-area .aboutMeBtn {
   border: #5E4A49 solid 1px;
-  padding: 24px 35px;
-  margin-top: 20px;
+  padding: 20px 40px;
   width: 160px;
   text-align: center;
+  font-size: 18px;
+}
+.aboutArtist .about-top .title-with-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 328px;
+  font-size: 16px;
+  color: #888888;
+}
+.aboutArtist .about-top .title-with-line::before, .aboutArtist .about-top .title-with-line::after {
+  content: "";
+  flex: 1;
+  border-bottom: #888888 solid 0.5px;
+}
+.aboutArtist .about-top .title-with-line span {
+  padding: 0 12px;
+  white-space: nowrap;
+}
+.aboutArtist .about-top .brand-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 276px;
+  justify-items: center;
+  align-items: center;
+  gap: 30px 50px;
+  width: 100%;
+  max-width: 360px;
+  margin: 20px 0;
+}
+.aboutArtist .about-top .brand-logos img {
+  opacity: 60%;
+  max-width: 95px;
+  height: auto;
+  object-fit: contain;
+}
+
+.you-are-a-star {
+  background-color: #FAE9E7;
+  min-height: 867px;
+  padding: 40px 16px 60px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.you-are-a-star h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.13rem;
+  text-align: center;
+  color: #725A58;
+}
+.you-are-a-star .pink-border {
+  width: 200px;
+  border: #E3B6B1 1px solid;
+}
+.you-are-a-star p {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Montserrat;
+  color: #191919;
+  text-align: center;
+}
+.you-are-a-star a {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 43px;
+  color: #5E4A49;
+  font-size: 18px;
+}
+.you-are-a-star .work-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.you-are-a-star .work-pictures img {
+  width: 157px;
+  height: 230px;
+}
+.you-are-a-star .customer-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.you-are-a-star .customer-review p {
+  font-family: Baskervville;
+  font-size: 20px;
+  line-height: 150%;
+}
+.you-are-a-star .customer-review .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
+}
+.you-are-a-star .customer-review .logo-container .arrow {
+  color: #725A58;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav .line {
+    height: 20px;
+    width: 0;
+    border: 1px solid #E3B6B1;
+  }
+  nav .hamburger-btn {
+    display: none;
+  }
+  nav .left-side,
+  nav .right-side {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 460px;
+  }
+  nav .right-side-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  nav .left-side {
+    margin-left: 30px;
+  }
+  nav .right-side {
+    margin-right: 30px;
+  }
+  nav .header-logo {
+    width: 100px;
+    height: auto;
+    margin: 15px 20px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .bg-container .bg-photo {
+    width: 100%;
+    height: 625px;
+    object-fit: cover;
+  }
+  .bg-container img {
+    width: 607px;
+    height: auto;
+  }
+  .bg-container .intro {
+    font-family: Montserrat;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  .aboutArtist {
+    background-color: #F8F6F4;
+    padding: 20px 0;
+  }
+  .aboutArtist .about-top {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .aboutArtist .intro-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .aboutArtist .intro-area h2 {
+    font-size: 32px;
+    width: 499px;
+  }
+  .aboutArtist .intro-area p {
+    font-size: 16px;
+    width: 437px;
+  }
+  .aboutArtist .intro-area .pinklogo {
+    width: 10%;
+    height: auto;
+  }
+  .aboutArtist .intro-area .aboutMeBtn {
+    border: #5E4A49 solid 1px;
+    padding: 24px 35px;
+    margin-top: 20px;
+    width: 160px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
