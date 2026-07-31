@@ -55,6 +55,19 @@ ul li {
 
 /* ---------- section header ---------- */
 
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  margin: 4rem 0;
+}
+
+.header-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
 .flex-header {
   display: flex;
   flex-direction: column;
