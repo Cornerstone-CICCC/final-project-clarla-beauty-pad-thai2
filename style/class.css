@@ -1,0 +1,215 @@
+:root {
+  --bg-white: #f8f6f4;
+  --txt-color: #725a58;
+  --bg-pink: #fae9e7;
+  --txt-black-color: #191919;
+  --black-color: #000000;
+  --dark-grey-color: #535353;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  background-color: var(--bg-white);
+  color: var(--txt-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-family: "Baskervville";
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Baskervville";
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Baskervville";
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul li {
+  color: var(--black-color);
+  line-height: 1.6;
+}
+
+/* ---------- section header ---------- */
+
+.flex-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.width-img {
+  width: 60%;
+}
+
+.flex-header p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 2rem;
+}
+
+/* ---------- section courses ---------- */
+
+.classes * {
+  background-color: var(--bg-pink);
+}
+
+.block {
+  display: block;
+}
+
+.model-img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 2rem;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  column-gap: 10px;
+}
+
+.info-class p {
+  color: var(--txt-black-color);
+  font-size: 18px;
+}
+
+.padding {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.marginL {
+  margin-left: 1rem;
+}
+
+.marginR {
+  margin-right: 2rem;
+}
+
+.classButton {
+  font-family: "Baskervville";
+  font-size: 18px;
+  border: 0.8px solid var(--txt-color);
+  padding: 20px 32px;
+  width: 90vw;
+  min-width: 160px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.workshop-list li {
+  list-style-type: "- ";
+}
+
+.font40 {
+  font-size: 40px;
+}
+
+.dark-grey {
+  color: var(--dark-grey-color);
+}
+
+.flex-service {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 2rem;
+}
+
+/* ---------- footer ---------- */
+
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.flex-contact p {
+  color: var(--txt-black-color);
+}
+
+.flex-contact-icon {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.marginLR {
+  margin: 0 auto;
+}
+
+.paddingY {
+  padding: 1.5rem 0;
+}
+
+.borderY {
+  border-top: 0.5px solid var(--txt-black-color);
+  border-bottom: 0.5px solid var(--txt-black-color);
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+}
+
+.grid-2col li {
+  list-style: none;
+  font-family: "Baskervville";
+  font-weight: 400;
+}
+
+.grid-2col li a {
+  text-decoration: none;
+}
+
+#underline {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  font-style: light;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
