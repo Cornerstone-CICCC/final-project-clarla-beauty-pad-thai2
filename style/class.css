@@ -241,8 +241,29 @@ a {
     text-align: center;
   }
 
+  .class-button2 {
+    display: inline-block;
+    font-size: 20px;
+    border: 0.8px solid var(--button-border-color);
+    padding: 20px 32px;
+    margin: 0 1.5rem;
+    text-align: center;
+  }
+
   .marginR {
     margin-right: 2rem;
+  }
+
+  .font36 {
+    font-size: 36px;
+  }
+
+  .font30 {
+    font-size: 30px;
+  }
+
+  .marginB {
+    margin-bottom: 5rem;
   }
 }
 
