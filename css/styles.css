@@ -245,7 +245,7 @@ nav .header-logo {
 
 .makeup-hairstyle {
   background-color: #F8F6F4;
-  min-height: 1524px;
+  min-height: 1071px;
   padding: 40px 16px;
   display: flex;
   flex-direction: column;
@@ -290,6 +290,80 @@ nav .header-logo {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+}
+
+.makeup-101 {
+  background-color: #FAE9E7;
+  min-height: 1540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.makeup-101 .outline {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  gap: 40px;
+  align-items: center;
+}
+.makeup-101 .outline h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.13em;
+  color: #725A58;
+}
+.makeup-101 .outline .class-containers {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.makeup-101 .outline .class-containers .class-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #725A58;
+}
+.makeup-101 .outline .class-containers .class-container .text-area p {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  max-width: 312px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area a {
+  font-size: 20pz;
+  line-height: 150%;
+}
+.makeup-101 .outline .class-containers .class-container .text-area a img {
+  margin-left: 8px;
+}
+.makeup-101 .outline .class-containers .class-container .view-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.makeup-101 .outline .class-containers .class-container .view-class img {
+  margin-left: 8px;
+}
+.makeup-101 .outline .all-classes-btn {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 32px;
+  font-size: 18px;
+  max-width: 312px;
 }
 
 @media (min-width: 768px) {
