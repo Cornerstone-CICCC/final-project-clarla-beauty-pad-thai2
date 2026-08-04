@@ -306,7 +306,7 @@ nav {
 
 .makeup-hairstyle {
     background-color: #F8F6F4;
-    min-height: 1071px;
+    min-height: 1524px;
     padding: 40px 16px;
 
     display: flex;
@@ -368,7 +368,7 @@ nav {
 
 .makeup-101 {
     background-color: #FAE9E7;
-    min-height: 1540px;
+    min-height: 1071px;
 
     display: flex;
     flex-direction: column;
@@ -428,7 +428,7 @@ nav {
                     }
 
                     a {
-                        font-size: 20pz;
+                        font-size: 20px;
                         line-height: 150%;
 
                         img {
@@ -455,8 +455,16 @@ nav {
             border: #5E4A49 solid 0.8px;
             padding: 20px 32px;
             font-size: 18px;
-            max-width: 312px;
+            display: block;
+            width: 312px;
+            text-align: center;
         }
+
+
+    }
+
+    .class-porfolio {
+        width: 100%;
     }
 
 
