@@ -470,6 +470,46 @@ nav {
 
 }
 
+.beauty-corner {
+    max-height: 558px;
+    background-color: #F8F6F4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    h2 {
+        color: #725A58;
+        font-size: 32px;
+        line-height: 130%;
+        font: Baskervville;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-left: 16px;
+    }
+
+    .pink-border {
+        width: 200px;
+        border: #E3B6B1 1px solid;
+    }
+
+    .more-beauty-tips {
+        border: #5E4A49 solid 0.8px;
+        padding: 20px 32px;
+        font-size: 18px;
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 400;
+        display: block;
+
+        margin: 30px 76.5px 43px 76.5px;
+    }
+}
+
 
 @media (min-width: 768px) {
     nav {
