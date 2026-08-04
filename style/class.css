@@ -148,6 +148,10 @@ ul li {
   font-size: 36px;
 }
 
+.marginR-mobile {
+  margin-right: 5rem;
+}
+
 /* ---------- footer ---------- */
 
 .flex-contact {
@@ -402,6 +406,10 @@ a {
 
   .marginX {
     margin: 0 20rem;
+  }
+
+  .marginXL {
+    margin: 0 25rem;
   }
 
   .marginB {
