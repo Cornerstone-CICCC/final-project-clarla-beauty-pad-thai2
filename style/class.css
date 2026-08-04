@@ -7,6 +7,7 @@
   --dark-grey-color: #535353;
   --vertical-line-menu-color: #e3b6b1;
   --button-border-color: #5e4a49;
+  --border-class-general: #b99692;
 }
 
 * {
@@ -59,6 +60,13 @@ ul li {
   width: 3rem;
 }
 
+.flex-nav {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  column-gap: 5rem;
+}
+
 .flex-header {
   display: flex;
   flex-direction: column;
@@ -98,10 +106,6 @@ ul li {
   padding: 2rem 1.5rem 2rem;
 }
 
-.paddingL-2 {
-  padding-left: 2rem;
-}
-
 .flex-row {
   display: flex;
   align-items: center;
@@ -138,10 +142,6 @@ ul li {
   display: flex;
   flex-direction: column;
   padding: 0 2rem 2rem;
-}
-
-.marginT {
-  margin-top: 3rem;
 }
 
 /* ---------- footer ---------- */
@@ -214,13 +214,6 @@ a {
     align-items: center;
   }
 
-  .flex-nav {
-    display: flex;
-    align-items: center;
-    margin: 4rem;
-    column-gap: 5rem;
-  }
-
   .desktop {
     display: none;
   }
@@ -228,7 +221,6 @@ a {
   .flex-col {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem 2rem;
   }
 
   .class-button {
@@ -237,17 +229,13 @@ a {
     border: 0.8px solid var(--button-border-color);
     padding: 20px 32px;
     width: 80vw;
-    margin: 0 2.5rem 3rem;
+    margin: 3rem 0;
     text-align: center;
+    align-self: center;
   }
 
-  .class-button2 {
-    display: inline-block;
-    font-size: 20px;
-    border: 0.8px solid var(--button-border-color);
-    padding: 20px 32px;
-    margin: 0 1.5rem;
-    text-align: center;
+  .marginT {
+    margin-top: 3rem;
   }
 
   .marginR {
@@ -265,6 +253,10 @@ a {
   .marginB {
     margin-bottom: 5rem;
   }
+
+  .paddingL-2 {
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 641px) {
@@ -280,19 +272,18 @@ a {
     font-size: 52px;
   }
 
-  .mobile {
-    display: none;
-  }
-
-  .no-border {
-    border-inline-end: 0;
+  .h1-no-space {
+    font-size: 80px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .flex-nav {
-    display: flex;
+    column-gap: 0;
     justify-content: space-between;
-    align-items: center;
-    margin: 4rem;
+    width: 100vw;
   }
 
   .flex-nav a {
@@ -300,8 +291,16 @@ a {
     border-inline-end: 1px solid var(--vertical-line-menu-color);
   }
 
+  .flex-nav .no-border {
+    border-inline-end: 0;
+  }
+
   .flex-header p {
     margin: 2rem 32rem;
+  }
+
+  .mobile {
+    display: none;
   }
 
   .model-img {
@@ -316,12 +315,18 @@ a {
     align-items: start;
   }
 
+  .grid-classes-big {
+    display: grid;
+    grid-template-columns: 0.4fr 0.9fr;
+    padding: 4rem 3rem 4rem 0;
+    align-items: start;
+  }
+
   .grid-master-class {
     display: grid;
     grid-template-columns: 0.45fr 0.8fr 0.8fr;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 2rem;
   }
 
   .info-class p {
@@ -336,14 +341,15 @@ a {
     font-size: 16px;
   }
 
-  .class-button {
+  .class-button2 {
     display: inline-block;
     font-size: 20px;
     border: 0.8px solid var(--button-border-color);
-    padding: 20px 32px;
-    width: 11rem;
-    margin: 0 2rem;
+    padding: 20px 0;
+    width: 20rem;
+    margin: 0 0 3rem;
     text-align: center;
+    align-self: center;
   }
 
   .grid-workshop {
@@ -351,7 +357,6 @@ a {
     grid-template-columns: 0.35fr 0.33fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 2rem;
   }
 
   .grid-beginner {
@@ -359,7 +364,6 @@ a {
     grid-template-columns: 0.32fr 0.35fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 2rem;
   }
 
   .flex-links {
@@ -367,5 +371,31 @@ a {
     justify-content: space-around;
     align-items: center;
     height: 4rem;
+  }
+
+  .box-class {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 1px solid var(--border-class-general);
+    margin-left: 8rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+
+  .box-class a {
+    padding-left: 0;
+  }
+
+  .paddingB {
+    padding-bottom: 2rem;
+  }
+
+  .paddingL-4 {
+    padding-left: 4rem;
+  }
+
+  .marginT2 {
+    margin-top: 2rem;
   }
 }

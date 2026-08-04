@@ -18,13 +18,21 @@
   <body>
     <header>
       <nav class="flex-nav mobile">
-        <img class="block header-icon" src="/images/menu.png" alt="menu icon" />
-        <img class="block" src="/images/logo.png" alt="Carla Beauty logo" />
-        <img
-          class="block header-icon"
-          src="/images/instagram.png"
-          alt="instagram icon"
-        />
+        <a href="#"
+          ><img
+            class="block header-icon"
+            src="/images/menu.png"
+            alt="menu icon"
+        /></a>
+        <a href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
+        <a href="#">
+          <img
+            class="block header-icon"
+            src="/images/instagram.png"
+            alt="instagram icon"
+        /></a>
       </nav>
 
       <nav class="flex-nav desktop">
@@ -32,7 +40,9 @@
         <a href="#">My Work</a>
         <a href="#">Services</a>
         <a class="underline no-border" href="#">Classes</a>
-        <img class="block" src="/images/logo.png" alt="Carla Beauty logo" />
+        <a class="no-border" href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
         <a href="#">Beauty Tips</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
@@ -48,20 +58,25 @@
     <main>
       <!-- General Information -->
 
-      <section>
-        <div class="flex-row paddingL-2">
-          <a href="classes.html"
-            ><img src="/images/less-than.png" alt="less than math signal"
-          /></a>
+      <div class="flex-row paddingL-2 paddingL-4">
+        <a href="classes.html"
+          ><img src="/images/less-than.png" alt="less than math signal"
+        /></a>
 
-          <a class="baskervville font30" href="classes.html">All classes</a>
-        </div>
+        <a class="baskervville font30" href="classes.html">All classes</a>
+      </div>
 
+      <h1 class="baskervville h1-no-space desktop">
+        <span>1</span>-on-<span>1</span> Master Class
+      </h1>
+
+      <!-- mobile -->
+      <section class="mobile">
         <div class="flex-col">
-          <h2 class="baskervville paddingL-2 marginT font40">
+          <h2 class="baskervville marginT font40 paddingL-2">
             <span>1</span>-on-<span>1</span> Master Class
           </h2>
-          <div class="flex-col info-class baskervville">
+          <div class="flex-col info-class baskervville paddingL-2">
             <div class="flex-row">
               <img src="/images/money.png" alt="dolar sign" />
               <p>CAD 1,500</p>
@@ -80,101 +95,143 @@
             </div>
           </div>
 
-          <a href="#" class="baskervville class-button2">Join Class</a>
+          <a href="#" class="baskervville class-button">Join Class</a>
         </div>
       </section>
 
       <!-- Detailed Information -->
       <section class="classes">
-        <img
-          class="model-img block marginT"
-          src="/images/model1.png"
-          alt="woman using brown lipstick and curly hair"
-        />
-        <div class="flex-col">
-          <div class="info-class">
-            <h2 class="baskervville font40 marginT">Overview</h2>
-            <p>
-              Led by experienced makeup artists, this exclusive class is for
-              individuals seeking personalized attention and guidance on
-              advanced techniques to elevate your artistry to a professional
-              level.
-            </p>
+        <div class="grid-classes-big">
+          <div>
+            <img
+              class="model-img block"
+              src="/images/model1.png"
+              alt="woman using brown lipstick and curly hair"
+            />
+
+            <div class="flex-col box-class">
+              <h2 class="baskervville paddingL-2 marginT font40 mobile">
+                <span>1</span>-on-<span>1</span> Master Class
+              </h2>
+              <h2 class="baskervville marginT font40 desktop">
+                <span>1</span>-on-<span>1</span> Master Class
+              </h2>
+              <div class="flex-col info-class baskervville paddingL-2">
+                <div class="flex-row">
+                  <img src="/images/money.png" alt="dolar sign" />
+                  <p>CAD 1,500</p>
+                </div>
+                <div class="flex-row">
+                  <img src="/images/clock.png" alt="clock icon" />
+                  <p>On-demand Mentorship</p>
+                </div>
+                <div class="flex-row">
+                  <img src="/images/person.png" alt="person icon" />
+                  <p>Future Professionals</p>
+                </div>
+                <div class="flex-row paddingB">
+                  <img src="/images/brush.png" alt="makeup brush icon" />
+                  <p class="dark-grey">Tools included</p>
+                </div>
+              </div>
+
+              <a href="#" class="baskervville class-button2">Join Class</a>
+            </div>
           </div>
 
-          <h2 class="baskervville font40 marginT">Curriculum</h2>
-          <div class="info-class">
-            <h3 class="baskervville">Personal Consultation</h3>
-            <ul class="marginL">
-              <li>
-                Discuss participant's goals, skill level, and areas of interest
-              </li>
-              <li>
-                Analyze participant's current makeup techniques and products
-              </li>
-            </ul>
-          </div>
+          <div class="flex-col paddingL-4">
+            <div class="info-class paddingL-2">
+              <h2 class="baskervville font40">Overview</h2>
+              <p>
+                Led by experienced makeup artists, this exclusive class is for
+                individuals seeking personalized attention and guidance on
+                advanced techniques to elevate your artistry to a professional
+                level.
+              </p>
+            </div>
 
-          <div class="info-class marginT">
-            <h3 class="baskervville">Customized Makeup Theory</h3>
-            <ul class="marginL">
-              <li>In-depth discussion on advanced makeup techniques</li>
-              <li>Understanding facial anatomy and bone structure</li>
-              <li>
-                Color theory and product selection tailored to participant's
-                preferences
-              </li>
-            </ul>
-          </div>
+            <h2 class="baskervville font40 marginT paddingL-2 marginT2">
+              Curriculum
+            </h2>
+            <div class="info-class paddingL-2 marginT2">
+              <h3 class="baskervville">Personal Consultation</h3>
+              <ul class="marginL">
+                <li>
+                  Discuss participant's goals, skill level, and areas of
+                  interest
+                </li>
+                <li>
+                  Analyze participant's current makeup techniques and products
+                </li>
+              </ul>
+            </div>
 
-          <div class="info-class marginT">
-            <h3 class="baskervville">Hands-on Practical Application</h3>
-            <ul class="marginL">
-              <li>Step-by-step demonstration of advanced makeup techniques</li>
-              <li>
-                Focus on refining application skills and achieving desired looks
-              </li>
-            </ul>
-          </div>
+            <div class="info-class marginT paddingL-2 marginT2">
+              <h3 class="baskervville">Customized Makeup Theory</h3>
+              <ul class="marginL">
+                <li>In-depth discussion on advanced makeup techniques</li>
+                <li>Understanding facial anatomy and bone structure</li>
+                <li>
+                  Color theory and product selection tailored to participant's
+                  preferences
+                </li>
+              </ul>
+            </div>
 
-          <div class="info-class marginT">
-            <h3 class="baskervville">
-              Specialized Topics (Choose based on participant's interest)
-            </h3>
-            <ul class="marginL">
-              <li>Advanced contouring and highlighting techniques</li>
-              <li>Creative eye makeup (smoky eyes, cut crease, etc)</li>
-              <li>
-                Flawless complexion techniques (perfecting skin texture, color
-                correction)
-              </li>
-              <li>Mastering lip artistry (ombre lips, lip countoring, etc)</li>
-              <li>Bridal or special occasion makeup</li>
-              <li>Editorial or avant-garde makeup</li>
-            </ul>
-          </div>
+            <div class="info-class marginT paddingL-2 marginT2">
+              <h3 class="baskervville">Hands-on Practical Application</h3>
+              <ul class="marginL">
+                <li>
+                  Step-by-step demonstration of advanced makeup techniques
+                </li>
+                <li>
+                  Focus on refining application skills and achieving desired
+                  looks
+                </li>
+              </ul>
+            </div>
 
-          <div class="info-class marginT">
-            <h3 class="baskervville">Business and Career Guidance</h3>
-            <ul class="marginL">
-              <li>Portfolio review and feedback</li>
-              <li>Marketing strategies for freelance makeup artists</li>
-              <li>Client consultation skills</li>
-              <li>Pricing and business management advice</li>
-            </ul>
-          </div>
+            <div class="info-class marginT paddingL-2 marginT2">
+              <h3 class="baskervville">
+                Specialized Topics (Choose based on participant's interest)
+              </h3>
+              <ul class="marginL">
+                <li>Advanced contouring and highlighting techniques</li>
+                <li>Creative eye makeup (smoky eyes, cut crease, etc)</li>
+                <li>
+                  Flawless complexion techniques (perfecting skin texture, color
+                  correction)
+                </li>
+                <li>
+                  Mastering lip artistry (ombre lips, lip countoring, etc)
+                </li>
+                <li>Bridal or special occasion makeup</li>
+                <li>Editorial or avant-garde makeup</li>
+              </ul>
+            </div>
 
-          <div class="info-class marginT marginB">
-            <h3 class="baskervville">Conclusion and Future Support</h3>
-            <ul class="marginL">
-              <li>
-                Resource recommendations for further learning and practice
-              </li>
-              <li>Continued support and mentorship options available</li>
-            </ul>
-          </div>
+            <div class="info-class marginT paddingL-2 marginT2">
+              <h3 class="baskervville">Business and Career Guidance</h3>
+              <ul class="marginL">
+                <li>Portfolio review and feedback</li>
+                <li>Marketing strategies for freelance makeup artists</li>
+                <li>Client consultation skills</li>
+                <li>Pricing and business management advice</li>
+              </ul>
+            </div>
 
-          <a href="#" class="baskervville class-button2 marginB">Join Class</a>
+            <div class="info-class marginT paddingL-2 marginT2">
+              <h3 class="baskervville">Conclusion and Future Support</h3>
+              <ul class="marginL">
+                <li>
+                  Resource recommendations for further learning and practice
+                </li>
+                <li>Continued support and mentorship options available</li>
+              </ul>
+            </div>
+
+            <a href="#" class="baskervville class-button mobile">Join Class</a>
+          </div>
         </div>
       </section>
     </main>
