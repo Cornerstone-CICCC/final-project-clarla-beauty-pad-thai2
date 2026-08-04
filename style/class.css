@@ -144,6 +144,10 @@ ul li {
   padding: 0 2rem 2rem;
 }
 
+.font36 {
+  font-size: 36px;
+}
+
 /* ---------- footer ---------- */
 
 .flex-contact {
@@ -242,10 +246,6 @@ a {
     margin-right: 2rem;
   }
 
-  .font36 {
-    font-size: 36px;
-  }
-
   .font30 {
     font-size: 30px;
   }
@@ -304,8 +304,9 @@ a {
   }
 
   .model-img {
-    width: 30vw;
-    justify-self: end;
+    width: 375px;
+    height: 495px;
+    margin-left: 8rem;
   }
 
   .grid-classes {
@@ -349,7 +350,7 @@ a {
     width: 20rem;
     margin: 0 0 3rem;
     text-align: center;
-    align-self: center;
+    align-items: center;
   }
 
   .grid-workshop {
@@ -376,7 +377,7 @@ a {
   .box-class {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 375px;
     border: 1px solid var(--border-class-general);
     margin-left: 8rem;
     padding-inline-start: 2rem;
@@ -397,5 +398,13 @@ a {
 
   .marginT2 {
     margin-top: 2rem;
+  }
+
+  .marginX {
+    margin: 0 20rem;
+  }
+
+  .marginB {
+    margin-bottom: 2rem;
   }
 }
