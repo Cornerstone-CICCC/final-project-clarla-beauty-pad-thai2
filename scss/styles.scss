@@ -1035,6 +1035,38 @@ a {
         }
     }
 
+    .makeup-hairstyle {
+        padding: 120px 143px;
+        max-height: 1239px;
+
+        .makeup-container {
+            h2 {
+                font-size: 80px;
+                line-height: 130%;
+                letter-spacing: 0.13rem;
+                max-width: 1078px;
+            }
+
+            p {
+                max-width: 437px;
+                font-size: 18px;
+                line-height: 150%;
+            }
+        }
+
+        .makeup-photos {
+            .mobile {
+                display: none;
+            }
+
+            .desktop {
+                min-width: 900px;
+            }
+
+        }
+
+    }
+
     .flex-links {
         display: flex;
         justify-content: space-around;
