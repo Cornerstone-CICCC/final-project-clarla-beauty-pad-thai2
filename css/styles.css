@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: #725A58;
@@ -90,12 +101,14 @@ nav .header-logo {
 .aboutArtist {
   background-color: #F8F6F4;
   padding: 20px 0;
+  width: 100%;
 }
 .aboutArtist .about-top {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 100%;
 }
 .aboutArtist .about-top .black-logo {
   width: 30px;
@@ -134,17 +147,19 @@ nav .header-logo {
 }
 .aboutArtist .about-top .intro-area .aboutMeBtn {
   border: #5E4A49 solid 1px;
-  padding: 20px 40px;
-  width: 160px;
+  padding: 20px 32px;
+  margin-top: 20px;
+  width: fit-content;
+  display: inline-block;
   text-align: center;
-  font-size: 18px;
+  white-space: nowrap;
 }
 .aboutArtist .about-top .title-with-line {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
-  width: 100%;
+  margin: 10px auto;
+  width: 90%;
   max-width: 328px;
   font-size: 16px;
   color: #888888;
@@ -161,13 +176,12 @@ nav .header-logo {
 .aboutArtist .about-top .brand-logos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 276px;
   justify-items: center;
   align-items: center;
   gap: 30px 50px;
   width: 100%;
   max-width: 360px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .aboutArtist .about-top .brand-logos img {
   opacity: 60%;
@@ -312,6 +326,8 @@ nav .header-logo {
   line-height: 120%;
   letter-spacing: 0.13em;
   color: #725A58;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .makeup-101 .outline .class-containers {
   padding: 0 24px;
@@ -336,6 +352,9 @@ nav .header-logo {
   font-weight: 400;
   line-height: 130%;
   color: #725A58;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .makeup-101 .outline .class-containers .class-container .text-area p {
   font-family: Montserrat;
@@ -403,7 +422,8 @@ nav .header-logo {
   text-align: center;
   font-weight: 400;
   display: block;
-  margin: 30px 76.5px 43px 76.5px;
+  margin: 30px auto 43px;
+  width: fit-content;
 }
 
 .talk .text-area {
@@ -439,6 +459,24 @@ nav .header-logo {
   flex-direction: column;
   gap: 20px;
 }
+.talk .submit-area .serviceAndClassTabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.talk .submit-area .serviceAndClassTabs .tab-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 130%;
+  font-family: Baskervville;
+  font-weight: 400;
+  color: #6C6C6C;
+}
+.talk .submit-area .serviceAndClassTabs .border {
+  border: 1px #888888 solid;
+}
 .talk .submit-area .title {
   font-family: Baskervville;
   font-size: 32px;
@@ -457,6 +495,28 @@ nav .header-logo {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.talk .submit-area form .event-type-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  background-color: #FBFAFA;
+  padding: 12px 16px;
+  color: #535353;
+}
+.talk .submit-area form .event-type-option input[type=radio] {
+  display: none;
+}
+.talk .submit-area form .event-type-option img {
+  display: none;
+}
+.talk .submit-area form .event-type-option.is-selected {
+  border: #B99692 solid 1px;
+  color: #191919;
+}
+.talk .submit-area form .event-type-option.is-selected img {
+  display: inline;
 }
 .talk .submit-area form label {
   font-size: 18px;
@@ -492,7 +552,8 @@ nav .header-logo {
 .talk .submit-area form input[type=text] {
   border: #B99692 solid 1px;
 }
-.talk .submit-area form input[type=tel], .talk .submit-area form select {
+.talk .submit-area form input[type=tel],
+.talk .submit-area form select {
   border: none;
 }
 .talk .submit-area form input[type=checkbox] {
@@ -500,36 +561,108 @@ nav .header-logo {
   background-color: #FFFFFF;
   width: 22px;
   height: 22px;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 0;
 }
 .talk .submit-area form .checkbox {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.talk .submit-area .contact, .talk .submit-area .calling-time {
+.talk .submit-area .contact,
+.talk .submit-area .calling-time {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.talk .submit-area .contact form, .talk .submit-area .calling-time form {
+.talk .submit-area .contact form,
+.talk .submit-area .calling-time form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.talk .submit-area .contact form input[type=radio], .talk .submit-area .calling-time form input[type=radio] {
+.talk .submit-area .contact form input[type=radio],
+.talk .submit-area .calling-time form input[type=radio] {
   accent-color: #B99692;
 }
-.talk .submit-area .contact label, .talk .submit-area .calling-time label {
+.talk .submit-area .contact label,
+.talk .submit-area .calling-time label {
   margin-left: 10px;
 }
-.talk .submit-area .contact label.title, .talk .submit-area .calling-time label.title {
+.talk .submit-area .contact label.title,
+.talk .submit-area .calling-time label.title {
   margin: 0;
 }
+.talk a {
+  border: #5E4A49 solid 0.8px;
+  padding: 24px 32px;
+  font-family: Baskervville;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #5E4A49;
+  text-align: center;
+  margin-top: 20px;
+}
 
-@media (min-width: 768px) {
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.flex-contact p {
+  color: var(--txt-black-color);
+}
+
+.flex-contact-icon {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.marginLR {
+  margin: 0 auto;
+}
+
+.paddingY {
+  padding: 1.5rem 0;
+}
+
+.borderY {
+  border-top: 0.5px solid var(--txt-black-color);
+  border-bottom: 0.5px solid var(--txt-black-color);
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+}
+
+.grid-2col li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  font-style: light;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 641px) {
   nav {
     padding: 32px 0;
     display: flex;
@@ -620,10 +753,18 @@ nav .header-logo {
   }
   .aboutArtist .intro-area .aboutMeBtn {
     border: #5E4A49 solid 1px;
-    padding: 24px 35px;
+    padding: 20px 32px;
     margin-top: 20px;
-    width: 160px;
+    width: fit-content;
+    display: inline-block;
     text-align: center;
+    white-space: nowrap;
+  }
+  .flex-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
   }
 }
 

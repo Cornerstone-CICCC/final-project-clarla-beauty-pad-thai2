@@ -10,6 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    
 </head>
 
 <body>
@@ -184,8 +185,37 @@
                 <p>Check availability, pricing, and schedule a meeting for your special day or our academy services.</p>
             </div>
             <div class="submit-area">
-                <div class-event-type>
-
+                <div class="serviceAndClassTabs">
+                    <div>
+                        <h2 class="tab-title">Services</h2>
+                        <div class="border"></div>
+                    </div>
+                    <div>
+                        <h2 class="tab-title">Classes</h2>
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <div class="event-type">
+                    <form>
+                        <div class="event-type">
+                            <label for="type" class="title">Event Type</label>
+                        </div>
+                        <label class="event-type-option">
+                            <input type="radio" id="event-type" name="event-type">
+                            <span>Wedding</span>
+                            <img src="src/home/check-icon.png" alt="check">
+                        </label>
+                        <label class="event-type-option">
+                            <input type="radio" id="event-type" name="event-type">
+                            <span>Party</span>
+                            <img src="src/home/check-icon.png" alt="check">
+                        </label>
+                        <label class="event-type-option">
+                            <input type="radio" id="event-type" name="event-type">
+                            <span>Photoshoot</span>
+                            <img src="src/home/check-icon.png" alt="check">
+                        </label>
+                    </form>
                 </div>
                 <div class="event-date">
                     <form>
@@ -198,11 +228,12 @@
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="not-decided-date" name="not-decided-date">
-                            <label for="not-decided">Not decided</label>
+                            <label for="not-decided-date">Not decided</label>
                         </div>
 
                     </form>
                 </div>
+
                 <div class="event-time">
                     <form>
                         <div>
@@ -214,8 +245,8 @@
                             </select>
                         </div>
                         <div class="checkbox">
-                            <input type="checkbox" id="not-decided-date" name="not-decided-date">
-                            <label for="not-decided">Not decided</label>
+                            <input type="checkbox" id="not-decided-time" name="not-decided-time">
+                            <label for="not-decided-time">Not decided</label>
                         </div>
                     </form>
                 </div>
@@ -278,12 +309,59 @@
 
                     </form>
                 </div>
+                <a href="#">Next</a>
             </div>
+            
         </section>
     </main>
-    <footer>
 
+    <!-- // Copy fooder code from Fer -->
+    <footer>
+      <div class="flex-contact">
+        <img src="/images/logo.png" alt="Carla Beauty logo" />
+        <p class="marginLR paddingY">Expert makeup and hairstyle studio</p>
+        <div class="flex-contact-icon">
+          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
+          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"
+            ><img src="/images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="borderY">
+        <div class="grid-2col baskervville mobile">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a class="underline" href="classes.html">Classes</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <nav class="flex-links desktop">
+          <a href="#">Home</a>
+          <a href="#">My Work</a>
+          <a href="#">Services</a>
+          <a class="underline" href="classes.html">Classes</a>
+          <a href="#">Beauty Tips</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+
+      <p class="copyright">Copyright 2024, Carla Beauty</p>
     </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

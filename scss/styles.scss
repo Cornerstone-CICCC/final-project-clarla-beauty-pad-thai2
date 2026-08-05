@@ -6,6 +6,17 @@
     // background-color: red;
 }
 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: #725A58;
@@ -109,12 +120,14 @@ nav {
 .aboutArtist {
     background-color: #F8F6F4;
     padding: 20px 0;
+    width: 100%;
 
     .about-top {
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        width: 100%;
 
         .black-logo {
             width: 30px;
@@ -159,10 +172,12 @@ nav {
 
             .aboutMeBtn {
                 border: #5E4A49 solid 1px;
-                padding: 20px 40px;
-                width: 160px;
+                padding: 20px 32px;
+                margin-top: 20px;
+                width: fit-content;
+                display: inline-block;
                 text-align: center;
-                font-size: 18px;
+                white-space: nowrap;
             }
 
         }
@@ -171,9 +186,9 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 10px 0;
+            margin: 10px auto;
 
-            width: 100%;
+            width: 90%;
             max-width: 328px;
 
             font-size: 16px;
@@ -198,14 +213,13 @@ nav {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
-            width: 276px;
             justify-items: center;
             align-items: center;
             gap: 30px 50px;
 
             width: 100%;
             max-width: 360px;
-            margin: 20px 0;
+            margin: 20px auto;
 
             img {
                 opacity: 60%;
@@ -388,6 +402,9 @@ nav {
             letter-spacing: 0.13em;
             color: #725A58;
 
+            font-variant-numeric: lining-nums;
+            font-feature-settings: "lnum" 1;
+
         }
 
 
@@ -416,6 +433,11 @@ nav {
                         font-weight: 400;
                         line-height: 130%;
                         color: #725A58;
+                        
+                        white-space: nowrap;
+                        
+                        font-variant-numeric: lining-nums;
+                        font-feature-settings: "lnum" 1;
                     }
 
                     p {
@@ -506,12 +528,15 @@ nav {
         font-weight: 400;
         display: block;
 
-        margin: 30px 76.5px 43px 76.5px;
+        margin: 30px auto 43px;
+        width: fit-content;
     }
 }
 
 
 .talk {
+
+
     .text-area {
         background-color: #F8F6F4;
         padding-top: 60px;
@@ -543,11 +568,33 @@ nav {
     }
 
     .submit-area {
+        // min-height: 1576px;
         background-color: #FAE9E7;
         padding: 40px 16px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        .serviceAndClassTabs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .tab-title {
+                text-align: center;
+                font-size: 32px;
+                line-height: 130%;
+                font-family: Baskervville;
+                font-weight: 400;
+                color: #6C6C6C;
+            }
+
+            .border {
+                border: 1px #888888 solid;
+            }
+        }
 
         .title {
             font-family: Baskervville;
@@ -565,12 +612,42 @@ nav {
             color: #191919;
         }
 
-        
 
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            .event-type-option {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 48px;
+
+                background-color: #FBFAFA;
+                padding: 12px 16px;
+
+                color: #535353;
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                img {
+                    display: none;
+                }
+
+                &.is-selected {
+                    border: #B99692 solid 1px;
+                    color: #191919;
+
+                    img {
+                        display: inline;
+                    }
+                }
+            }
+
+
 
             label {
                 font-size: 18px;
@@ -598,7 +675,7 @@ nav {
             input[type="text"],
             input[type="tel"],
             select {
-                
+
                 background-color: #FBFAFA;
                 padding: 12px 16px;
                 width: 100%;
@@ -609,11 +686,12 @@ nav {
                 font-weight: 300;
             }
 
-            input[type="text"]{
+            input[type="text"] {
                 border: #B99692 solid 1px;
             }
 
-            input[type="tel"],select {
+            input[type="tel"],
+            select {
                 border: none;
             }
 
@@ -622,10 +700,6 @@ nav {
                 background-color: #FFFFFF;
                 width: 22px;
                 height: 22px;
-
-                -webkit-appearance: none;
-                appearance: none;
-                border-radius: 0;
 
             }
 
@@ -637,7 +711,8 @@ nav {
 
         }
 
-        .contact, .calling-time {
+        .contact,
+        .calling-time {
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -647,7 +722,7 @@ nav {
                 flex-direction: column;
                 gap: 16px;
 
-                input[type="radio"]{
+                input[type="radio"] {
                     accent-color: #B99692;
                 }
             }
@@ -659,17 +734,86 @@ nav {
             label.title {
                 margin: 0;
             }
-
-            
         }
+    }
 
+    a {
+        border: #5E4A49 solid 0.8px;
+        padding: 24px 32px;
+        font-family: Baskervville;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #5E4A49;
+        text-align: center;
 
+        margin-top: 20px;
 
     }
 }
 
+// Copy fooder code from Fer
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
 
-@media (min-width: 768px) {
+.flex-contact p {
+  color: var(--txt-black-color);
+}
+
+.flex-contact-icon {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.marginLR {
+  margin: 0 auto;
+}
+
+.paddingY {
+  padding: 1.5rem 0;
+}
+
+.borderY {
+  border-top: 0.5px solid var(--txt-black-color);
+  border-bottom: 0.5px solid var(--txt-black-color);
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+}
+
+.grid-2col li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  font-style: light;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 641px) {
     nav {
         padding: 32px 0;
         display: flex;
@@ -789,14 +933,23 @@ nav {
 
             .aboutMeBtn {
                 border: #5E4A49 solid 1px;
-                padding: 24px 35px;
+                padding: 20px 32px;
                 margin-top: 20px;
-                width: 160px;
+                width: fit-content;
+                display: inline-block;
                 text-align: center;
+                white-space: nowrap;
             }
         }
     }
 
+
+    .flex-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
 
 
 }
