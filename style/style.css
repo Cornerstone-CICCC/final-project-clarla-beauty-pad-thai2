@@ -155,36 +155,37 @@ ul li {
 }
 
 /* ---------- Contact ---------- */
+
 .container-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   font-size: 32px;
-  padding: 2rem 1rem 1rem;
+  padding: 3rem 3rem 0;
 }
 
 #services {
   border-bottom: 1px solid var(--black-color);
-  width: 7rem;
+  width: 100%;
   color: var(--black-color);
+  text-align: center;
 }
 
 #classes {
   border-bottom: 1px solid var(--classes-color);
-  width: 6rem;
+  width: 100%;
   color: var(--classes-color);
+  text-align: center;
 }
 
 .input-txt {
   background-color: var(--bg-paper-white);
   height: 3rem;
-  width: 90%;
+  width: 100%;
   font-size: 20px;
-  margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
-  align-self: center;
 }
 
 .bg-check {
@@ -261,6 +262,16 @@ input[type="radio"] {
 
 .visible {
   display: inline;
+}
+
+form {
+  width: 100%;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------- footer ---------- */
@@ -383,6 +394,14 @@ a {
 
   .marginB-2 {
     margin-bottom: 2rem;
+  }
+
+  .grid-event {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
   }
 }
 
@@ -523,6 +542,10 @@ a {
     padding-left: 4rem;
   }
 
+  .padding3 {
+    padding: 1rem 3rem 3rem;
+  }
+
   .marginT2 {
     margin-top: 2rem;
   }
@@ -537,5 +560,61 @@ a {
 
   .marginB {
     margin-bottom: 2rem;
+  }
+
+  .grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+  }
+
+  .flex-phone {
+    display: flex;
+    column-gap: 10px;
+    font-size: 18px;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .font32 {
+    font-size: 32px;
+  }
+
+  .grid-event {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .input-txt {
+    width: 100%;
+  }
+
+  .grid-date-time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  .country-code {
+    width: 90px;
+  }
+
+  .input-phone {
+    width: 85%;
+  }
+
+  .class-button-next {
+    display: inline-block;
+    font-size: 20px;
+    border: 0.8px solid var(--button-border-color);
+    padding: 20px 0;
+    width: 10rem;
+    margin: 3rem 0 0;
+    text-align: center;
   }
 }
