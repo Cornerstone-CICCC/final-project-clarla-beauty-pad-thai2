@@ -1187,11 +1187,99 @@ a {
             padding: 0;
         }
 
-        a{
+        a {
             font-size: 20px;
             line-height: 150%;
         }
 
+    }
+
+    .talk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .text-area {
+            h2 {
+                font-size: 80px;
+                line-height: 130%;
+                letter-spacing: 0.13em;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                max-width: 474px;
+            }
+        }
+
+        .submit-area {
+            min-width: 768px;
+            padding: 60px 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .serviceAndClassTabs {
+                grid-column: 1/-1;
+                grid-row: 1;
+            }
+
+            .event-type {
+                grid-column: 1/-1;
+                grid-row: 2;
+
+                .desktop-design {
+
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .grid1 {
+                        grid-column: 1;
+                    }
+
+                    .grid2 {
+                        grid-column: 2;
+                    }
+                }
+            }
+
+            .event-date {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .event-time {
+                grid-column: 2;
+                grid-row: 3;
+            }
+
+            .name {
+                grid-column: 1/-1;
+                grid-row: 4;
+            }
+
+            .contact {
+                grid-column: 1/-1;
+                grid-row: 5;
+            }
+
+            .calling-time {
+                display: none;
+            }
+
+            a {
+                grid-column: 1/-1;
+
+                max-width: 160px;
+                height: auto;
+                justify-self: center;
+                text-align: center;
+                padding: 24px 59px;
+                margin: 0;
+
+            }
+        }
     }
 
     .flex-links {

@@ -949,6 +949,74 @@ a {
     font-size: 20px;
     line-height: 150%;
   }
+  .talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .talk .text-area h2 {
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: 0.13em;
+  }
+  .talk .text-area p {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 474px;
+  }
+  .talk .submit-area {
+    min-width: 768px;
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .talk .submit-area .serviceAndClassTabs {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .talk .submit-area .event-type {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .talk .submit-area .event-type .desktop-design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .talk .submit-area .event-type .desktop-design .grid1 {
+    grid-column: 1;
+  }
+  .talk .submit-area .event-type .desktop-design .grid2 {
+    grid-column: 2;
+  }
+  .talk .submit-area .event-date {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .talk .submit-area .event-time {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .talk .submit-area .name {
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
+  .talk .submit-area .contact {
+    grid-column: 1/-1;
+    grid-row: 5;
+  }
+  .talk .submit-area .calling-time {
+    display: none;
+  }
+  .talk .submit-area a {
+    grid-column: 1/-1;
+    max-width: 160px;
+    height: auto;
+    justify-self: center;
+    text-align: center;
+    padding: 24px 59px;
+    margin: 0;
+  }
   .flex-links {
     display: flex;
     justify-content: space-around;
