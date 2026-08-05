@@ -395,7 +395,7 @@ nav .header-logo {
 }
 
 .beauty-corner {
-  max-height: 558px;
+  min-height: 558px;
   background-color: #F8F6F4;
   display: flex;
   flex-direction: column;
@@ -417,6 +417,9 @@ nav .header-logo {
 .beauty-corner .pink-border {
   width: 200px;
   border: #E3B6B1 1px solid;
+}
+.beauty-corner .desktop {
+  display: none;
 }
 .beauty-corner .more-beauty-tips {
   border: #5E4A49 solid 0.8px;
@@ -862,6 +865,7 @@ a {
     display: none;
   }
   .makeup-hairstyle .makeup-photos .desktop {
+    display: block;
     min-width: 900px;
   }
   .makeup-101 {
@@ -926,6 +930,24 @@ a {
   .makeup-101 .outline .class-porfolio {
     grid-column: 2;
     justify-self: right;
+  }
+  .beauty-corner {
+    padding: 80px 133px;
+  }
+  .beauty-corner .mobile {
+    display: none;
+  }
+  .beauty-corner .desktop {
+    display: block;
+  }
+  .beauty-corner h2 {
+    font-size: 48px;
+    line-height: 130%;
+    padding: 0;
+  }
+  .beauty-corner a {
+    font-size: 20px;
+    line-height: 150%;
   }
   .flex-links {
     display: flex;

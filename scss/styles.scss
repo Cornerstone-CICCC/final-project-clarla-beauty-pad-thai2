@@ -497,7 +497,7 @@ nav {
 }
 
 .beauty-corner {
-    max-height: 558px;
+    min-height: 558px;
     background-color: #F8F6F4;
 
     display: flex;
@@ -521,6 +521,10 @@ nav {
     .pink-border {
         width: 200px;
         border: #E3B6B1 1px solid;
+    }
+
+    .desktop {
+        display: none;
     }
 
     .more-beauty-tips {
@@ -1068,6 +1072,7 @@ a {
             }
 
             .desktop {
+                display: block;
                 min-width: 900px;
             }
 
@@ -1163,6 +1168,30 @@ a {
 
 
         }
+    }
+
+    .beauty-corner {
+        padding: 80px 133px;
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        h2 {
+            font-size: 48px;
+            line-height: 130%;
+            padding: 0;
+        }
+
+        a{
+            font-size: 20px;
+            line-height: 150%;
+        }
+
     }
 
     .flex-links {
