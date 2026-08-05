@@ -6,7 +6,8 @@
     // background-color: red;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -433,9 +434,9 @@ nav {
                         font-weight: 400;
                         line-height: 130%;
                         color: #725A58;
-                        
+
                         white-space: nowrap;
-                        
+
                         font-variant-numeric: lining-nums;
                         font-feature-settings: "lnum" 1;
                     }
@@ -754,62 +755,62 @@ nav {
 
 // Copy fooder code from Fer
 .flex-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
 }
 
 .flex-contact p {
-  color: var(--txt-black-color);
+    color: var(--txt-black-color);
 }
 
 .flex-contact-icon {
-  display: flex;
-  column-gap: 2rem;
+    display: flex;
+    column-gap: 2rem;
 }
 
 .marginLR {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .paddingY {
-  padding: 1.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .borderY {
-  border-top: 0.5px solid var(--txt-black-color);
-  border-bottom: 0.5px solid var(--txt-black-color);
-  width: 90%;
-  margin: 0 auto 2rem;
+    border-top: 0.5px solid var(--txt-black-color);
+    border-bottom: 0.5px solid var(--txt-black-color);
+    width: 90%;
+    margin: 0 auto 2rem;
 }
 
 .grid-2col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  text-align: center;
-  height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
 }
 
 .grid-2col li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .copyright {
-  font-size: 14px;
-  font-style: light;
-  text-align: center;
-  margin-bottom: 1.5rem;
+    font-size: 14px;
+    font-style: light;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -899,37 +900,58 @@ a {
 
     .aboutArtist {
         background-color: #F8F6F4;
-        padding: 20px 0;
+        padding: 40px 28px;
 
         .about-top {
-            display: flex;
+            display: grid;
+            grid-template-columns: 306px 1fr;
+            max-width: 1200px;
+            margin: 0 auto;
             gap: 40px;
-            justify-content: center;
+
+            .black-logo {
+                display: none;
+            }
+        }
+
+        .portfolio {
+            grid-column: 1;
+            grid-row: 1;
         }
 
         .intro-area {
+            grid-row: 1;
+            grid-column: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 10px;
+            align-items: flex-start;
+            justify-items: start;
+            text-align: left;
+            gap: 16px;
+            
+            .pinklogo {
+                    display: block;
+                    width: 32px;
+                    height: auto;
+                    margin: 0;
+            }
 
             h2 {
-                font-size: 32px;
-                width: 499px;
+                font-size: 48px;
+                line-height: 130%;
+                width: 100%;
+                text-align: left;
+                width: 100%;
 
             }
 
             p {
-                font-size: 16px;
-                width: 437px;
+                font-size: 18px;
+                width: 100%;
+                line-height: 150%;
+                text-align: left;
+                width: 100%;
             }
-
-            .pinklogo {
-                width: 10%;
-                height: auto;
-
-            }
-
 
             .aboutMeBtn {
                 border: #5E4A49 solid 1px;
@@ -939,17 +961,86 @@ a {
                 display: inline-block;
                 text-align: center;
                 white-space: nowrap;
+                
+            }
+
+            .grayLogo {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        .title-with-line {
+            grid-column: 1/-1;
+            grid-row: 2;
+        }
+
+        .about-bottom {
+            grid-column: 1/-1;
+            grid-row: 3;
+
+
+            .brand-logos {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                max-width: 1000px;
+                gap: 40px;
+
             }
         }
     }
 
+    .you-are-a-star {
+        display: flex;
+        gap: 32px;
+        padding:120px 0;
+
+        h2 {
+            font-size: 80px;
+            letter-spacing: 0.13rem;
+            line-height: 130%;
+        }
+
+        .subtitle { 
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 150%;
+            max-width: 437px;
+        }
+
+        .work-pictures {
+            display: flex;
+            gap: 22.15px;
+            margin: 20px 0;
+            
+
+            img {
+                width: 344px;
+                height: auto;
+                object-fit: cover;
+                
+            }
+        }
+
+        .customer-review {
+            p {
+                max-width: 778px;
+                font-size:32px;
+                line-height: 130%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 
     .flex-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
-  }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
 
 
 }

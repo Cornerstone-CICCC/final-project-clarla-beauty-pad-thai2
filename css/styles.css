@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -726,30 +727,51 @@ a {
   }
   .aboutArtist {
     background-color: #F8F6F4;
-    padding: 20px 0;
+    padding: 40px 28px;
   }
   .aboutArtist .about-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 306px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
     gap: 40px;
-    justify-content: center;
+  }
+  .aboutArtist .about-top .black-logo {
+    display: none;
+  }
+  .aboutArtist .portfolio {
+    grid-column: 1;
+    grid-row: 1;
   }
   .aboutArtist .intro-area {
+    grid-row: 1;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-  .aboutArtist .intro-area h2 {
-    font-size: 32px;
-    width: 499px;
-  }
-  .aboutArtist .intro-area p {
-    font-size: 16px;
-    width: 437px;
+    align-items: flex-start;
+    justify-items: start;
+    text-align: left;
+    gap: 16px;
   }
   .aboutArtist .intro-area .pinklogo {
-    width: 10%;
+    display: block;
+    width: 32px;
     height: auto;
+    margin: 0;
+  }
+  .aboutArtist .intro-area h2 {
+    font-size: 48px;
+    line-height: 130%;
+    width: 100%;
+    text-align: left;
+    width: 100%;
+  }
+  .aboutArtist .intro-area p {
+    font-size: 18px;
+    width: 100%;
+    line-height: 150%;
+    text-align: left;
+    width: 100%;
   }
   .aboutArtist .intro-area .aboutMeBtn {
     border: #5E4A49 solid 1px;
@@ -759,6 +781,59 @@ a {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
+  }
+  .aboutArtist .intro-area .grayLogo {
+    width: 100%;
+    margin: 0;
+  }
+  .aboutArtist .title-with-line {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .aboutArtist .about-bottom {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+  .aboutArtist .about-bottom .brand-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    gap: 40px;
+  }
+  .you-are-a-star {
+    display: flex;
+    gap: 32px;
+    padding: 120px 0;
+  }
+  .you-are-a-star h2 {
+    font-size: 80px;
+    letter-spacing: 0.13rem;
+    line-height: 130%;
+  }
+  .you-are-a-star .subtitle {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 437px;
+  }
+  .you-are-a-star .work-pictures {
+    display: flex;
+    gap: 22.15px;
+    margin: 20px 0;
+  }
+  .you-are-a-star .work-pictures img {
+    width: 344px;
+    height: auto;
+    object-fit: cover;
+  }
+  .you-are-a-star .customer-review p {
+    max-width: 778px;
+    font-size: 32px;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .flex-links {
     display: flex;
