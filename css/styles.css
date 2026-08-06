@@ -1,0 +1,1149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Baskervville, serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #725A58;
+}
+
+nav {
+  background-color: #F8F6F4;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+nav .hamburger-btn {
+  height: 27px;
+  width: 18px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+nav .hamburger-btn span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #725A58;
+  border-radius: 2px;
+}
+nav .left-side,
+nav .right-side-text {
+  display: none;
+}
+nav .header-logo {
+  width: 95.6px;
+  height: auto;
+}
+
+.bg-photo {
+  width: 100%;
+  max-width: 100%;
+  min-height: 500px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bg-container {
+  position: relative;
+  color: white;
+}
+.bg-container .bg-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.bg-container .bg-content .img {
+  width: 295px;
+  height: auto;
+}
+.bg-container .bg-content .intro {
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16x;
+  line-height: 160%;
+}
+.bg-container .bg-content .consultation-btn {
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  border: solid white 1px;
+  padding: 16px 24px;
+  margin-top: 10px;
+}
+
+.aboutArtist {
+  background-color: #F8F6F4;
+  padding: 20px 0;
+  width: 100%;
+}
+.aboutArtist .about-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.aboutArtist .about-top .black-logo {
+  width: 30px;
+  height: auto;
+}
+.aboutArtist .about-top .pinklogo {
+  display: none;
+}
+.aboutArtist .about-top .intro-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.aboutArtist .about-top .intro-area h2 {
+  font-size: 32px;
+  color: #191919;
+  line-height: 130%;
+  font-weight: 400;
+  text-align: center;
+  max-width: 325px;
+}
+.aboutArtist .about-top .intro-area p {
+  font-size: 16px;
+  font-family: Montserrat;
+  line-height: 160%;
+  font-weight: 300;
+  text-align: center;
+  color: #535353;
+  max-width: 325px;
+}
+.aboutArtist .about-top .intro-area .grayLogo {
+  width: 165px;
+  height: auto;
+  margin: 20px 0;
+}
+.aboutArtist .about-top .intro-area .aboutMeBtn {
+  border: #5E4A49 solid 1px;
+  padding: 20px 32px;
+  margin-top: 20px;
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+.aboutArtist .about-top .title-with-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 328px;
+  font-size: 16px;
+  color: #888888;
+}
+.aboutArtist .about-top .title-with-line::before, .aboutArtist .about-top .title-with-line::after {
+  content: "";
+  flex: 1;
+  border-bottom: #888888 solid 0.5px;
+}
+.aboutArtist .about-top .title-with-line span {
+  padding: 0 12px;
+  white-space: nowrap;
+}
+.aboutArtist .about-bottom .brand-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px 20px;
+  width: 100%;
+  max-width: 360px;
+  margin: 20px auto;
+}
+.aboutArtist .about-bottom .brand-logos img {
+  opacity: 0.6;
+  max-width: 95px;
+  height: auto;
+  object-fit: contain;
+}
+
+.you-are-a-star {
+  background-color: #FAE9E7;
+  min-height: 867px;
+  padding: 40px 16px 60px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.you-are-a-star h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.13rem;
+  text-align: center;
+  color: #725A58;
+}
+.you-are-a-star .pink-border {
+  width: 200px;
+  border: #E3B6B1 1px solid;
+}
+.you-are-a-star p {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Montserrat;
+  color: #191919;
+  text-align: center;
+}
+.you-are-a-star a {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 43px;
+  color: #5E4A49;
+  font-size: 18px;
+}
+.you-are-a-star .work-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.you-are-a-star .work-pictures img {
+  width: 157px;
+  height: 230px;
+}
+.you-are-a-star .customer-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.you-are-a-star .customer-review p {
+  font-family: Baskervville;
+  font-size: 20px;
+  line-height: 150%;
+}
+.you-are-a-star .customer-review .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
+}
+.you-are-a-star .customer-review .logo-container .arrow {
+  color: #725A58;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.makeup-hairstyle {
+  background-color: #F8F6F4;
+  max-height: 1524px;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.makeup-hairstyle .makeup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.makeup-hairstyle .makeup-container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.13rem;
+  text-align: center;
+  color: #725A58;
+}
+.makeup-hairstyle .makeup-container .pink-border {
+  width: 200px;
+  border: #E3B6B1 1px solid;
+}
+.makeup-hairstyle .makeup-container p {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Montserrat;
+  color: #191919;
+  text-align: center;
+}
+.makeup-hairstyle .makeup-container a {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 43px;
+  color: #5E4A49;
+  font-size: 18px;
+}
+.makeup-hairstyle .makeup-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.makeup-hairstyle .makeup-photos .desktop {
+  display: none;
+}
+
+.makeup-101 {
+  background-color: #FAE9E7;
+  min-height: 1071px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.makeup-101 .outline {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  gap: 40px;
+  align-items: center;
+}
+.makeup-101 .outline h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.13em;
+  color: #725A58;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+.makeup-101 .outline .class-containers {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.makeup-101 .outline .class-containers .class-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #725A58;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+.makeup-101 .outline .class-containers .class-container .text-area p {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  max-width: 312px;
+}
+.makeup-101 .outline .class-containers .class-container .text-area a {
+  font-size: 20px;
+  line-height: 150%;
+}
+.makeup-101 .outline .class-containers .class-container .text-area a img {
+  margin-left: 8px;
+}
+.makeup-101 .outline .class-containers .class-container .view-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.makeup-101 .outline .class-containers .class-container .view-class img {
+  margin-left: 8px;
+}
+.makeup-101 .outline .all-classes-btn {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 32px;
+  font-size: 18px;
+  display: block;
+  width: 312px;
+  text-align: center;
+}
+.makeup-101 .class-porfolio {
+  width: 100%;
+}
+
+.beauty-corner {
+  min-height: 558px;
+  background-color: #F8F6F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.beauty-corner h2 {
+  color: #725A58;
+  font-size: 32px;
+  line-height: 130%;
+  font: Baskervville;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-left: 16px;
+}
+.beauty-corner .pink-border {
+  width: 200px;
+  border: #E3B6B1 1px solid;
+}
+.beauty-corner .desktop {
+  display: none;
+}
+.beauty-corner .more-beauty-tips {
+  border: #5E4A49 solid 0.8px;
+  padding: 20px 32px;
+  font-size: 18px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 400;
+  display: block;
+  margin: 30px auto 43px;
+  width: fit-content;
+}
+
+.talk .text-area {
+  background-color: #F8F6F4;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.talk .text-area h2 {
+  color: #725A58;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.13rem;
+  font-family: Baskervville;
+  text-align: center;
+}
+.talk .text-area p {
+  font-family: Montserrat;
+  max-width: 328px;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+.talk .submit-area {
+  background-color: #FAE9E7;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.talk .submit-area .serviceAndClassTabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.talk .submit-area .serviceAndClassTabs .tab-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 130%;
+  font-family: Baskervville;
+  font-weight: 400;
+  color: #6C6C6C;
+}
+.talk .submit-area .serviceAndClassTabs .border {
+  border: 1px #888888 solid;
+}
+.talk .submit-area .title {
+  font-family: Baskervville;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #191919;
+}
+.talk .submit-area .small-title {
+  font-family: Baskervville;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #191919;
+}
+.talk .submit-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.talk .submit-area form .event-type-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  background-color: #FBFAFA;
+  padding: 12px 16px;
+  color: #535353;
+}
+.talk .submit-area form .event-type-option input[type=radio] {
+  display: none;
+}
+.talk .submit-area form .event-type-option img {
+  display: none;
+}
+.talk .submit-area form .event-type-option.is-selected {
+  border: #B99692 solid 1px;
+  color: #191919;
+}
+.talk .submit-area form .event-type-option.is-selected img {
+  display: inline;
+}
+.talk .submit-area form label {
+  font-size: 18px;
+  line-height: 0.15rem;
+  font-weight: 300;
+  font-family: Montserrat;
+}
+.talk .submit-area form #event-date {
+  height: 51px;
+  width: 100%;
+  padding: 12px 16px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  border: #B99692 solid 1px;
+  background-color: #FBFAFA;
+  background-image: url("../src/home/calendar.png");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.talk .submit-area form #event-date::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.talk .submit-area form .contact-field {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.talk .submit-area form .contact-field input {
+  grid-column: 2/-1;
+}
+.talk .submit-area form .contact-field {
+  border: 1px #B99692 solid;
+}
+.talk .submit-area form .contact-field-mail {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.talk .submit-area form .contact-field-mail input {
+  grid-column: 1/-1;
+  max-height: 51px;
+}
+.talk .submit-area form .hidden {
+  display: none;
+}
+.talk .submit-area form input[type=text],
+.talk .submit-area form input[type=tel],
+.talk .submit-area form input[type=mail],
+.talk .submit-area form select {
+  background-color: #FBFAFA;
+  padding: 12px 16px;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 0.15rem;
+  font-weight: 300;
+}
+.talk .submit-area form input[type=text],
+.talk .submit-area form input[type=mail] {
+  border: #B99692 solid 1px;
+}
+.talk .submit-area form input[type=tel],
+.talk .submit-area form select {
+  border: none;
+}
+.talk .submit-area form input[type=checkbox] {
+  border: #B99692 solid 1px;
+  background-color: #FFFFFF;
+  width: 22px;
+  height: 22px;
+}
+.talk .submit-area form .checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.talk .submit-area .contact,
+.talk .submit-area .calling-time {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.talk .submit-area .contact form,
+.talk .submit-area .calling-time form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.talk .submit-area .contact form input[type=radio],
+.talk .submit-area .calling-time form input[type=radio] {
+  accent-color: #B99692;
+}
+.talk .submit-area .contact label,
+.talk .submit-area .calling-time label {
+  margin-left: 10px;
+}
+.talk .submit-area .contact label.title,
+.talk .submit-area .calling-time label.title {
+  margin: 0;
+}
+.talk a {
+  border: #5E4A49 solid 0.8px;
+  padding: 24px 32px;
+  font-family: Baskervville;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #5E4A49;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #F8F6F4;
+}
+
+:root {
+  --bg-white: #f8f6f4;
+  --txt-color: #725a58;
+  --bg-pink: #fae9e7;
+  --txt-black-color: #191919;
+  --black-color: #000000;
+  --dark-grey-color: #535353;
+  --vertical-line-menu-color: #e3b6b1;
+  --button-border-color: #5e4a49;
+  --border-class-general: #b99692;
+}
+
+.Montserrat {
+  font-family: Montserrat;
+}
+
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.flex-contact p {
+  color: var(--txt-black-color);
+  line-height: 1.6;
+}
+
+.flex-contact-icon {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.marginLR {
+  margin: 0 auto;
+}
+
+.paddingY {
+  padding: 1.5rem 0;
+}
+
+.borderY {
+  border-top: 0.5px solid var(--txt-black-color);
+  border-bottom: 0.5px solid var(--txt-black-color);
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.grid-2col li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.mobile li {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.desktop {
+  display: none;
+}
+
+.copyright {
+  font-size: 14px;
+  font-style: light;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 641px) {
+  body {
+    background-color: #F8F6F4;
+  }
+  nav {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav .line {
+    height: 20px;
+    width: 0;
+    border: 1px solid #E3B6B1;
+  }
+  nav .hamburger-btn {
+    display: none;
+  }
+  nav .left-side,
+  nav .right-side {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 460px;
+  }
+  nav .right-side-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  nav .left-side {
+    margin-left: 30px;
+  }
+  nav .right-side {
+    margin-right: 30px;
+  }
+  nav .header-logo {
+    width: 100px;
+    height: auto;
+    margin: 15px 20px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .bg-container .bg-photo {
+    width: 100%;
+    height: 625px;
+    object-fit: cover;
+  }
+  .bg-container img {
+    width: 607px;
+    height: auto;
+  }
+  .bg-container .intro {
+    font-family: Montserrat;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  .aboutArtist {
+    background-color: #F8F6F4;
+    padding: 40px 28px;
+  }
+  .aboutArtist .about-top {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutArtist .about-top .black-logo {
+    display: none;
+  }
+  .aboutArtist .about-top .portfolio {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    max-width: 380px;
+    width: 100%;
+  }
+  .aboutArtist .about-top .intro-area {
+    grid-row: 1;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px 24px;
+  }
+  .aboutArtist .about-top .intro-area .pinklogo {
+    display: block;
+    width: 32px;
+    height: auto;
+    margin: 0;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .aboutArtist .about-top .intro-area h2 {
+    font-size: 48px;
+    line-height: 130%;
+    text-align: left;
+    grid-column: 1/-1;
+    grid-row: 2;
+    white-space: normal;
+    max-width: none;
+  }
+  .aboutArtist .about-top .intro-area p {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+    grid-column: 1/-1;
+    grid-row: 3;
+    max-width: 460px;
+  }
+  .aboutArtist .about-top .intro-area .aboutMeBtn {
+    grid-column: 1;
+    grid-row: 4;
+    border: #5E4A49 solid 1px;
+    padding: 24px 32px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .aboutArtist .about-top .intro-area .grayLogo {
+    grid-column: 2;
+    grid-row: 4;
+    max-width: 180px;
+    justify-self: center;
+    margin: 0;
+    transform: rotate(-9deg);
+  }
+  .aboutArtist .about-top .title-with-line {
+    grid-column: 1/-1;
+    grid-row: 2;
+    max-width: 800px;
+    width: 100%;
+  }
+  .aboutArtist .about-bottom .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 76.5px 30px;
+  }
+  .aboutArtist .about-bottom .lancome,
+  .aboutArtist .about-bottom .inglot,
+  .aboutArtist .about-bottom .Mercier {
+    max-height: 29px;
+  }
+  .aboutArtist .about-bottom .mac {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .lancome {
+    grid-column: 3/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .inglot {
+    grid-column: 5/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .Mercier {
+    grid-column: 7/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .Tilbury {
+    grid-column: 2/span 2;
+    grid-row: 2;
+    max-height: 48px;
+  }
+  .aboutArtist .about-bottom .tarte {
+    grid-column: 4/span 2;
+    grid-row: 2;
+    justify-self: left;
+    max-height: 32px;
+  }
+  .aboutArtist .about-bottom .anastasia {
+    grid-column: 5/span 2;
+    grid-row: 2;
+    max-height: 65px;
+  }
+  .aboutArtist .about-bottom .kryolan {
+    grid-column: 7/span 2;
+    grid-row: 2;
+    justify-self: left;
+    max-height: 55px;
+  }
+  .you-are-a-star {
+    display: flex;
+    gap: 32px;
+    padding: 120px 0;
+  }
+  .you-are-a-star h2 {
+    font-size: 80px;
+    letter-spacing: 0.13rem;
+    line-height: 130%;
+  }
+  .you-are-a-star .subtitle {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 437px;
+  }
+  .you-are-a-star .work-pictures {
+    display: flex;
+    gap: 22.15px;
+    margin: 20px 0;
+  }
+  .you-are-a-star .work-pictures img {
+    width: 344px;
+    height: auto;
+    object-fit: cover;
+  }
+  .you-are-a-star .customer-review p {
+    max-width: 778px;
+    font-size: 32px;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .makeup-hairstyle {
+    padding: 120px 143px;
+  }
+  .makeup-hairstyle .makeup-container {
+    min-height: auto;
+  }
+  .makeup-hairstyle .makeup-container h2 {
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: 0.13rem;
+    max-width: 1078px;
+  }
+  .makeup-hairstyle .makeup-container p {
+    max-width: 437px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .makeup-hairstyle .makeup-photos .mobile {
+    display: none;
+  }
+  .makeup-hairstyle .makeup-photos .desktop {
+    display: block;
+    min-width: 900px;
+  }
+  .makeup-101 {
+    background-color: #FAE9E7;
+    margin: 0 68px;
+    padding: 50px 116px;
+  }
+  .makeup-101 .outline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    row-gap: 10px;
+    column-gap: 20px;
+    align-items: start;
+  }
+  .makeup-101 .outline .mobile {
+    display: none;
+  }
+  .makeup-101 .outline h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: 0.13em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .makeup-101 .outline .class-containers {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .makeup-101 .outline .class-containers .class-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .makeup-101 .outline .class-containers .class-container .badge {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+  }
+  .makeup-101 .outline .class-containers .class-container .text-area h3 {
+    font-size: 48px;
+    line-height: 130%;
+    text-align: left;
+  }
+  .makeup-101 .outline .class-containers .class-container .text-area p {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 420px;
+    text-align: left;
+  }
+  .makeup-101 .outline .class-containers .class-container .view-class greater {
+    width: 10;
+    height: auto;
+  }
+  .makeup-101 .outline .all-classes-btn {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 160px;
+  }
+  .makeup-101 .outline .class-porfolio {
+    grid-column: 2;
+    justify-self: right;
+  }
+  .beauty-corner {
+    padding: 80px 133px;
+  }
+  .beauty-corner .mobile {
+    display: none;
+  }
+  .beauty-corner .desktop {
+    display: block;
+  }
+  .beauty-corner h2 {
+    font-size: 48px;
+    line-height: 130%;
+    padding: 0;
+  }
+  .beauty-corner a {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .talk .text-area h2 {
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: 0.13em;
+  }
+  .talk .text-area p {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 474px;
+  }
+  .talk .submit-area {
+    min-width: 768px;
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .talk .submit-area .serviceAndClassTabs {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .talk .submit-area .event-type {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .talk .submit-area .event-type .desktop-design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .talk .submit-area .event-type .desktop-design .grid1 {
+    grid-column: 1;
+  }
+  .talk .submit-area .event-type .desktop-design .grid2 {
+    grid-column: 2;
+  }
+  .talk .submit-area .event-date {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .talk .submit-area .event-time {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .talk .submit-area .name {
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
+  .talk .submit-area .contact {
+    grid-column: 1/-1;
+    grid-row: 5;
+  }
+  .talk .submit-area .calling-time {
+    display: none;
+  }
+  .talk .submit-area a {
+    grid-column: 1/-1;
+    max-width: 160px;
+    height: auto;
+    justify-self: center;
+    text-align: center;
+    padding: 24px 59px;
+    margin: 0;
+  }
+  .flex-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
