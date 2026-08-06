@@ -903,7 +903,10 @@ a {
 
   .input-height {
     height: 5rem;
-    /* padding: 0 1rem; */
     text-align: center;
+  }
+
+  .marginT-1D {
+    margin-top: 1rem;
   }
 }
