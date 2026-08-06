@@ -10,6 +10,7 @@
   --border-class-general: #b99692;
   --classes-color: #888888;
   --bg-paper-white: #fbfafa;
+  --msg-text: #a7a7a7;
 }
 
 * {
@@ -143,6 +144,7 @@ ul li {
 .flex-service {
   display: flex;
   flex-direction: column;
+  row-gap: 15px;
   padding: 0 2rem 2rem;
 }
 
@@ -182,7 +184,7 @@ ul li {
 .input-txt {
   background-color: var(--bg-paper-white);
   height: 3rem;
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   padding: 0.5rem 1rem;
   border: none;
@@ -274,6 +276,57 @@ form {
   align-items: center;
 }
 
+.font18 {
+  font-size: 18px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.paddingT {
+  padding-top: 1rem;
+}
+
+.bg-magnifying-glass {
+  background-image: url("/images/magnifying-glass.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.flex-operator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+.operator-btn {
+  height: 40px;
+  width: 40px;
+  color: var(--black-color);
+  border: none;
+  cursor: pointer;
+}
+
+.subtract {
+  display: inline-block;
+  width: 13px;
+  height: 1px;
+  background-color: var(--black-color);
+  vertical-align: middle;
+}
+
+.msg-area {
+  background-color: var(--bg-paper-white);
+  border: none;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--msg-text);
+}
+
 /* ---------- footer ---------- */
 
 .flex-contact {
@@ -351,6 +404,7 @@ a {
   .flex-col {
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
   }
 
   .class-button {
@@ -364,8 +418,20 @@ a {
     align-self: center;
   }
 
+  .flex-row {
+    margin: 0;
+  }
+
   .marginT {
     margin-top: 3rem;
+  }
+
+  .marginT-1 {
+    margin-top: 1rem;
+  }
+
+  .margin-1 {
+    margin: 1rem;
   }
 
   .marginR {
@@ -402,6 +468,30 @@ a {
     justify-content: center;
     align-items: center;
     row-gap: 0.5rem;
+  }
+
+  .grid-extra-person {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 7rem;
+    padding: 1rem;
+  }
+
+  .bg-paper-white {
+    background-color: var(--bg-paper-white);
+  }
+
+  .justify-end {
+    justify-self: end;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    border: 0.8px solid var(--button-border-color);
+    padding: 20px 32px;
+    margin: 3rem 0;
+    cursor: pointer;
+    font-size: 20px;
   }
 }
 
