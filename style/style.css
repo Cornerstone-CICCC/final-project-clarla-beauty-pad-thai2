@@ -112,7 +112,6 @@ ul li {
 .flex-row {
   display: flex;
   align-items: center;
-  margin: 10px 0;
   column-gap: 10px;
 }
 
@@ -225,10 +224,8 @@ input[type="radio"] {
   border: 1px solid var(--border-class-general);
 }
 
-.flex-row-no-gap {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
+.marginY-15 {
+  margin: 15px 0;
 }
 
 .country-code {
@@ -258,22 +255,17 @@ input[type="radio"] {
   border-bottom: 1px solid var(--border-class-general);
 }
 
-.invisible {
-  display: none;
-}
-
-.visible {
-  display: inline;
-}
-
 form {
   width: 100%;
 }
 
 .flex-button {
-  display: flex;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
+}
+
+.invisible {
+  display: none;
 }
 
 .font18 {
@@ -286,6 +278,10 @@ form {
 
 .paddingT {
   padding-top: 1rem;
+}
+
+.padding1 {
+  padding: 1rem;
 }
 
 .bg-magnifying-glass {
@@ -325,6 +321,14 @@ form {
   font-size: 20px;
   font-weight: 300;
   color: var(--msg-text);
+}
+
+.bg-paper-white {
+  background-color: var(--bg-paper-white);
+}
+
+.justify-end {
+  justify-self: end;
 }
 
 /* ---------- footer ---------- */
@@ -418,10 +422,6 @@ a {
     align-self: center;
   }
 
-  .flex-row {
-    margin: 0;
-  }
-
   .marginT {
     margin-top: 3rem;
   }
@@ -475,14 +475,6 @@ a {
     grid-template-columns: repeat(2, 1fr);
     height: 7rem;
     padding: 1rem;
-  }
-
-  .bg-paper-white {
-    background-color: var(--bg-paper-white);
-  }
-
-  .justify-end {
-    justify-self: end;
   }
 
   .submit-button {
@@ -706,5 +698,59 @@ a {
     width: 10rem;
     margin: 3rem 0 0;
     text-align: center;
+  }
+
+  .grid-bridal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .paddingT-desktop {
+    padding-top: 0;
+  }
+
+  .paddingR {
+    padding-right: 35px;
+  }
+
+  .flex-gommage {
+    display: flex;
+    align-items: start;
+    column-gap: 10px;
+  }
+
+  #gommage {
+    height: 25px;
+    width: 25px;
+  }
+
+  .grid-4col {
+    display: grid;
+    grid-template-columns: 120px repeat(3, 1fr);
+    column-gap: 0.8rem;
+    row-gap: 10px;
+    align-items: center;
+    background-color: var(--bg-paper-white);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #col-span {
+    grid-column: span 2;
+  }
+
+  .vert-line {
+    padding-inline-start: 3.5rem;
+    border-inline-start: 1px solid var(--vertical-line-menu-color);
+  }
+
+  .vert-line-big-space {
+    padding-inline-start: 13.2rem;
+    border-inline-start: 1px solid var(--vertical-line-menu-color);
+  }
+
+  .msg-area {
+    width: 100%;
   }
 }

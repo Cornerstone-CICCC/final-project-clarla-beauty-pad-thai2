@@ -1,63 +1,75 @@
 $(function () {
-  //Add border and check icon
+  //Add border, check icon and show button
   $("#wedding").on("focus", function () {
     $("#wedding").addClass("border-pink bg-check");
     $("#party").removeClass("border-pink bg-check");
     $("#photoshoot").removeClass("border-pink bg-check");
+    $("#call-bride").show();
+    $("#nextWedButton").show();
+    $("#nextPartyButton").hide();
+    $("#submitButton").hide();
   });
 
   $("#party").on("focus", function () {
+    $("#party").addClass("border-pink bg-check");
     $("#wedding").removeClass("border-pink bg-check");
     $("#photoshoot").removeClass("border-pink bg-check");
-    $("#party").addClass("border-pink bg-check");
+    $("#nextPartyButton").show();
+    $("#call-bride").hide();
+    $("#nextWedButton").hide();
+    $("#submitButton").hide();
   });
 
   $("#photoshoot").on("focus", function () {
+    $("#photoshoot").addClass("border-pink bg-check");
     $("#wedding").removeClass("border-pink bg-check");
     $("#party").removeClass("border-pink bg-check");
-    $("#photoshoot").addClass("border-pink bg-check");
+    $("#submitButton").show();
+    $("#call-bride").hide();
+    $("#nextWedButton").hide();
+    $("#nextPartyButton").hide();
   });
 
   $("#makeup").on("focus", function () {
-    $("#hairstyle").removeClass("border-pink bg-check");
     $("#makeup").addClass("border-pink bg-check");
   });
 
   $("#hairstyle").on("focus", function () {
-    $("#makeup").removeClass("border-pink bg-check");
     $("#hairstyle").addClass("border-pink bg-check");
   });
 
+  //definir como remover quando a noiva quiser de-selecionar
+
   // Show phone number / email once at a time
   $("#call").on("click", function () {
-    $("#callNumber").removeClass("invisible").addClass("visible");
-    $("#whatsNumber").removeClass("visible").addClass("invisible");
-    $("#smsNumber").removeClass("visible").addClass("invisible");
-    $("#emailText").removeClass("visible").addClass("invisible");
+    $("#callNumber").show();
+    $("#whatsNumber").hide();
+    $("#smsNumber").hide();
+    $("#emailText").hide();
   });
 
   $("#whats").on("click", function () {
-    $("#whatsNumber").removeClass("invisible").addClass("visible");
-    $("#callNumber").removeClass("visible").addClass("invisible");
-    $("#smsNumber").removeClass("visible").addClass("invisible");
-    $("#emailText").removeClass("visible").addClass("invisible");
+    $("#whatsNumber").show();
+    $("#callNumber").hide();
+    $("#smsNumber").hide();
+    $("#emailText").hide();
   });
 
   $("#sms").on("click", function () {
-    $("#smsNumber").removeClass("invisible").addClass("visible");
-    $("#whatsNumber").removeClass("visible").addClass("invisible");
-    $("#callNumber").removeClass("visible").addClass("invisible");
-    $("#emailText").removeClass("visible").addClass("invisible");
+    $("#smsNumber").show();
+    $("#callNumber").hide();
+    $("#whatsNumber").hide();
+    $("#emailText").hide();
   });
 
   $("#email").on("click", function () {
-    $("#emailText").removeClass("invisible").addClass("visible");
-    $("#whatsNumber").removeClass("visible").addClass("invisible");
-    $("#smsNumber").removeClass("visible").addClass("invisible");
-    $("#callNumber").removeClass("visible").addClass("invisible");
+    $("#emailText").show();
+    $("#callNumber").hide();
+    $("#whatsNumber").hide();
+    $("#smsNumber").hide();
   });
 
-  // Subtract extra person
+  // Subtract extra person -- mobile
   $(".sub-btn").on("click", function () {
     const target = $(this).data("target");
     let count = Number($(target).text()) || 0;
@@ -68,7 +80,7 @@ $(function () {
     }
   });
 
-  // Add extra person
+  // Add extra person -- mobile
   $(".add-btn").on("click", function () {
     const target = $(this).data("target");
     let count = Number($(target).text());

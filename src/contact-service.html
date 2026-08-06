@@ -99,7 +99,7 @@
       <section>
         <form action="" class="classes marginLR marginT2">
           <nav class="container-contact">
-            <a class="baskervville" id="services" href="service1.html"
+            <a class="baskervville" id="services" href="contact-service.html"
               >Services</a
             >
             <a class="baskervville" id="classes" href="#">Classes</a>
@@ -184,7 +184,7 @@
               <label for="call">Call</label>
             </div>
 
-            <div id="callNumber" class="flex-row-no-gap paddingL-1 invisible">
+            <div id="callNumber" class="marginY-15 paddingL-1 invisible">
               <select
                 class="input-txt country-code border-code"
                 name="countryCode"
@@ -205,7 +205,7 @@
               <label for="whats">WhatsApp</label>
             </div>
 
-            <div id="whatsNumber" class="flex-row-no-gap paddingL-1 invisible">
+            <div id="whatsNumber" class="marginY-15 paddingL-1 invisible">
               <select
                 class="input-txt country-code border-code"
                 name="countryCode"
@@ -225,7 +225,7 @@
               <label for="sms">SMS</label>
             </div>
 
-            <div id="smsNumber" class="flex-row-no-gap paddingL-1 invisible">
+            <div id="smsNumber" class="marginY-15 paddingL-1 invisible">
               <select
                 class="input-txt country-code border-code"
                 name="countryCode"
@@ -246,51 +246,65 @@
             </div>
             <input
               id="emailText"
-              class="input-txt border-pink invisible margin-1"
+              class="input-txt border-pink invisible margin-1 marginY-15"
               type="email"
               placeholder="Your email"
             />
 
-            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
-              When do you want us to call?
-            </h2>
-            <div class="flex-row paddingL-1">
-              <input type="radio" id="idm" value="idm" name="receive-call" />
-              <label for="idm">I don't mind</label>
-            </div>
-            <div class="flex-row paddingL-1 paddingT">
-              <input
-                type="radio"
-                id="morning"
-                value="morning"
-                name="receive-call"
-              />
-              <label for="morning">Morning</label>
-            </div>
-            <div class="flex-row paddingL-1 paddingT">
-              <input
-                type="radio"
-                id="afternoon"
-                value="afternoon"
-                name="receive-call"
-              />
-              <label for="afternoon">Afternoon</label>
-            </div>
-            <div class="flex-row paddingL-1 paddingT">
-              <input
-                type="radio"
-                id="evening"
-                value="evening"
-                name="receive-call"
-              />
-              <label for="evening">Evening</label>
+            <div id="call-bride" class="invisible">
+              <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+                When do you want us to call?
+              </h2>
+              <div class="flex-row paddingL-1">
+                <input type="radio" id="idm" value="idm" name="receive-call" />
+                <label for="idm">I don't mind</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="morning"
+                  value="morning"
+                  name="receive-call"
+                />
+                <label for="morning">Morning</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="afternoon"
+                  value="afternoon"
+                  name="receive-call"
+                />
+                <label for="afternoon">Afternoon</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="evening"
+                  value="evening"
+                  name="receive-call"
+                />
+                <label for="evening">Evening</label>
+              </div>
             </div>
 
-            <div class="flex-button">
+            <div id="nextWedButton" class="flex-button">
               <a
-                href="service2.html"
+                href="service-bride.html"
                 class="baskervville class-button class-button-next"
                 >Next</a
+              >
+            </div>
+
+            <div id="nextPartyButton" class="flex-button invisible">
+              <a href="#" class="baskervville class-button class-button-next"
+                >Next</a
+              >
+            </div>
+
+            <div id="submitButton" class="flex-button invisible">
+              <a href="#" class="baskervville class-button class-button-next"
+                >Submit</a
               >
             </div>
           </div>
