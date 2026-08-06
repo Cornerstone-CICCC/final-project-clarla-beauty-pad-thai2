@@ -11,6 +11,7 @@
   --classes-color: #888888;
   --bg-paper-white: #fbfafa;
   --msg-text: #a7a7a7;
+  --border-container: #a06d67;
 }
 
 * {
@@ -124,6 +125,10 @@ ul li {
   padding: 0 1.5rem 3rem 2rem;
 }
 
+.padding2 {
+  padding: 2rem;
+}
+
 .marginL {
   margin-left: 1rem;
 }
@@ -134,6 +139,10 @@ ul li {
 
 .font40 {
   font-size: 40px;
+}
+
+.font45 {
+  font-size: 45px;
 }
 
 .dark-grey {
@@ -277,12 +286,20 @@ form {
   display: none;
 }
 
+.font16 {
+  font-size: 16px;
+}
+
 .font18 {
   font-size: 18px;
 }
 
 .font20 {
   font-size: 20px;
+}
+
+.font24 {
+  font-size: 24px;
 }
 
 .paddingT {
@@ -338,6 +355,23 @@ form {
 
 .justify-end {
   justify-self: end;
+}
+
+.border-container {
+  border: 1px solid var(--border-container);
+}
+
+.img-size70 {
+  height: 70px;
+  width: 70px;
+}
+
+#basicServices {
+  margin-top: 1rem;
+}
+
+#brideShareBtn {
+  margin: 3rem 0 1rem;
 }
 
 /* ---------- footer ---------- */
