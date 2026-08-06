@@ -638,6 +638,26 @@ nav .header-logo {
   margin-top: 20px;
 }
 
+footer {
+  background-color: #F8F6F4;
+}
+
+:root {
+  --bg-white: #f8f6f4;
+  --txt-color: #725a58;
+  --bg-pink: #fae9e7;
+  --txt-black-color: #191919;
+  --black-color: #000000;
+  --dark-grey-color: #535353;
+  --vertical-line-menu-color: #e3b6b1;
+  --button-border-color: #5e4a49;
+  --border-class-general: #b99692;
+}
+
+.Montserrat {
+  font-family: Montserrat;
+}
+
 .flex-contact {
   display: flex;
   flex-direction: column;
@@ -648,6 +668,7 @@ nav .header-logo {
 
 .flex-contact p {
   color: var(--txt-black-color);
+  line-height: 1.6;
 }
 
 .flex-contact-icon {
@@ -673,9 +694,9 @@ nav .header-logo {
 .grid-2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: start;
   text-align: center;
-  height: 15vh;
+  padding: 1.5rem 0;
 }
 
 .grid-2col li {
@@ -690,11 +711,21 @@ a {
   text-decoration: underline;
 }
 
+.mobile li {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.desktop {
+  display: none;
+}
+
 .copyright {
   font-size: 14px;
   font-style: light;
   text-align: center;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 @media (min-width: 641px) {
@@ -1109,6 +1140,9 @@ a {
     justify-content: space-around;
     align-items: center;
     height: 4rem;
+  }
+  .mobile {
+    display: none;
   }
 }
 
