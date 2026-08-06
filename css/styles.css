@@ -532,21 +532,47 @@ nav .header-logo {
   font-family: Montserrat;
 }
 .talk .submit-area form #event-date {
-  background-image: url("./src/home/calendar.png");
-  background-position: right 16px center;
+  height: 51px;
+  width: 100%;
+  padding: 12px 16px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  border: #B99692 solid 1px;
+  background-image: url("../src/home/calendar.png");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  cursor: pointer;
 }
-.talk .submit-area form .phone-number {
+.talk .submit-area form #event-date::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.talk .submit-area form .contact-field {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.talk .submit-area form .phone-number input {
+.talk .submit-area form .contact-field input {
   grid-column: 2/-1;
 }
-.talk .submit-area form .phone-number {
+.talk .submit-area form .contact-field {
   border: 1px #B99692 solid;
+}
+.talk .submit-area form .contact-field-mail {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.talk .submit-area form .contact-field-mail input {
+  grid-column: 1/-1;
+  max-height: 51px;
+}
+.talk .submit-area form .hidden {
+  display: none;
 }
 .talk .submit-area form input[type=text],
 .talk .submit-area form input[type=tel],
+.talk .submit-area form input[type=mail],
 .talk .submit-area form select {
   background-color: #FBFAFA;
   padding: 12px 16px;
@@ -556,7 +582,8 @@ nav .header-logo {
   line-height: 0.15rem;
   font-weight: 300;
 }
-.talk .submit-area form input[type=text] {
+.talk .submit-area form input[type=text],
+.talk .submit-area form input[type=mail] {
   border: #B99692 solid 1px;
 }
 .talk .submit-area form input[type=tel],
@@ -826,7 +853,9 @@ a {
   .aboutArtist .about-bottom .mac {
     max-width: 112px;
   }
-  .aboutArtist .about-bottom .lancome, .aboutArtist .about-bottom .inglot, .aboutArtist .about-bottom .Mercier {
+  .aboutArtist .about-bottom .lancome,
+  .aboutArtist .about-bottom .inglot,
+  .aboutArtist .about-bottom .Mercier {
     max-height: 29px;
   }
   .aboutArtist .about-bottom .Tilbury {

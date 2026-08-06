@@ -203,17 +203,17 @@
                             <label for="type" class="title">Event Type</label>
                         </div>
                         <label class="event-type-option grid1">
-                            <input type="radio" id="event-type" name="event-type">
+                            <input type="radio" id="event-type" name="event-type" value="wedding">
                             <span>Wedding</span>
                             <img src="src/home/check-icon.png" alt="check">
                         </label>
                         <label class="event-type-option grid2">
-                            <input type="radio" id="event-type" name="event-type">
+                            <input type="radio" id="event-type" name="event-type" value="party">
                             <span>Party</span>
                             <img src="src/home/check-icon.png" alt="check">
                         </label>
                         <label class="event-type-option grid3">
-                            <input type="radio" id="event-type" name="event-type">
+                            <input type="radio" id="event-type" name="event-type" value="photoshoot">
                             <span>Photoshoot</span>
                             <img src="src/home/check-icon.png" alt="check">
                         </label>
@@ -225,8 +225,8 @@
                             <label for="date" class="title">Event Date</label>
                         </div>
                         <div class="form">
-                            <input type="text" id="event-date" name="event-date" placeholder="Select Date">
-
+                            <input type="date" id="event-date" name="event-date" placeholder="Select Date">
+                            
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="not-decided-date" name="not-decided-date">
@@ -243,7 +243,10 @@
                         </div>
                         <div>
                             <select id="time" name="time">
+                                <option value="blank">Choose the time</option>
                                 <option value="fullday">Full day</option>
+                                <option value="morning">Half day (in the morning)</option>
+                                <option value="afternoon">Half day (in the afternoon)</option>
                             </select>
                         </div>
                         <div class="checkbox">
@@ -266,7 +269,7 @@
                         <div>
                             <input type="radio" id="call" name="contact_way" value="call">
                             <label for="call">Call</label>
-                            <div class="phone-number">
+                            <div class="contact-field hidden">
                                 <select id="tel" name="tel">
                                     <option value="canada">+1</option>
                                 </select>
@@ -276,14 +279,29 @@
                         <div>
                             <input type="radio" id="whatsapp" name="contact_way" value="whatsapp">
                             <label for="whatsapp">WhatsApp</label>
+                            <div class="contact-field hidden">
+                                <select id="tel" name="tel">
+                                    <option value="canada">+1</option>
+                                </select>
+                                <input type="tel" id="tel-input" name="call" placeholder="Your whatsapp number">
+                            </div>
                         </div>
                         <div>
                             <input type="radio" id="sms" name="contact_way" value="sms">
                             <label for="sms">SMS</label>
+                            <div class="contact-field hidden">
+                                <select id="tel" name="tel">
+                                    <option value="canada">+1</option>
+                                </select>
+                                <input type="tel" id="tel-input" name="call" placeholder="Your phone number">
+                            </div>
                         </div>
                         <div>
                             <input type="radio" id="mail" name="contact_way" value="mail">
                             <label for="mail">E-mail</label>
+                            <div class="contact-field-mail hidden">
+                                <input type="mail" id="mail-input" name="call" placeholder="Your email address">
+                            </div>
                         </div>
 
                     </form>
@@ -311,7 +329,7 @@
 
                     </form>
                 </div>
-                <a href="#">Next</a>
+                <a id="submit" href="#">Submit</a>
             </div>
             
         </section>
