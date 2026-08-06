@@ -390,6 +390,13 @@ form {
   color: var(--input-text-color);
 }
 
+.flex-col-medias {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-self: start;
+}
+
 /* ---------- footer ---------- */
 
 .flex-contact {
@@ -559,12 +566,12 @@ a {
     border: 1px solid var(--border-class-general);
   }
 
-  .flex-col-medias {
+  /* .flex-col-medias {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     align-self: start;
-  }
+  } */
 }
 
 @media (min-width: 641px) {
