@@ -185,10 +185,24 @@ ul li {
   text-align: center;
 }
 
+#classes2 {
+  border-bottom: 1px solid var(--black-color);
+  width: 100%;
+  color: var(--black-color);
+  text-align: center;
+}
+
+#services2 {
+  border-bottom: 1px solid var(--classes-color);
+  width: 100%;
+  color: var(--classes-color);
+  text-align: center;
+}
+
 .input-txt {
   background-color: var(--bg-paper-white);
   height: 3rem;
-  width: 90%;
+  width: 100%;
   font-size: 20px;
   padding: 0.5rem 1rem;
   border: none;
@@ -339,6 +353,7 @@ form {
   font-size: 20px;
   font-weight: 300;
   color: var(--msg-text);
+  width: 100%;
 }
 
 .bg-paper-white {

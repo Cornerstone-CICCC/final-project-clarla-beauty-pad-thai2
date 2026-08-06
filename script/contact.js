@@ -38,7 +38,23 @@ $(function () {
     $("#hairstyle").addClass("border-pink bg-check");
   });
 
-  //definir como remover quando a noiva quiser de-selecionar
+  $("#masterClass").on("focus", function () {
+    $("#masterClass").addClass("border-pink bg-check");
+    $("#workshop").removeClass("border-pink bg-check");
+    $("#beginner").removeClass("border-pink bg-check");
+  });
+
+  $("#workshop").on("focus", function () {
+    $("#workshop").addClass("border-pink bg-check");
+    $("#masterClass").removeClass("border-pink bg-check");
+    $("#beginner").removeClass("border-pink bg-check");
+  });
+
+  $("#beginner").on("focus", function () {
+    $("#beginner").addClass("border-pink bg-check");
+    $("#masterClass").removeClass("border-pink bg-check");
+    $("#workshop").removeClass("border-pink bg-check");
+  });
 
   // Show phone number / email once at a time
   $("#call").on("click", function () {
