@@ -209,29 +209,34 @@ nav {
 
 
         }
+    }
 
+    .about-bottom {
         .brand-logos {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
             justify-items: center;
             align-items: center;
-            gap: 30px 50px;
+            gap: 30px 20px;
 
             width: 100%;
             max-width: 360px;
             margin: 20px auto;
 
             img {
-                opacity: 60%;
+                opacity: 0.6;
                 max-width: 95px;
                 height: auto;
                 object-fit: contain;
 
             }
-        }
 
+        }
     }
+
+
+
 
 
 }
@@ -915,91 +920,135 @@ a {
 
         .about-top {
             display: grid;
-            grid-template-columns: 306px 1fr;
-            max-width: 1200px;
+            grid-template-columns: 360px 1fr;
+            max-width: 1000px;
             margin: 0 auto;
             gap: 40px;
+            align-items: center;
+            justify-content: center;
 
             .black-logo {
                 display: none;
             }
-        }
 
-        .portfolio {
-            grid-column: 1;
-            grid-row: 1;
-        }
 
-        .intro-area {
-            grid-row: 1;
-            grid-column: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-items: start;
-            text-align: left;
-            gap: 16px;
 
-            .pinklogo {
-                display: block;
-                width: 32px;
-                height: auto;
-                margin: 0;
-            }
-
-            h2 {
-                font-size: 48px;
-                line-height: 130%;
-                width: 100%;
-                text-align: left;
-                width: 100%;
-
-            }
-
-            p {
-                font-size: 18px;
-                width: 100%;
-                line-height: 150%;
-                text-align: left;
+            .portfolio {
+                grid-column: 1;
+                grid-row: 1;
+                justify-self: end;
+                max-width: 380px;
                 width: 100%;
             }
 
-            .aboutMeBtn {
-                border: #5E4A49 solid 1px;
-                padding: 20px 32px;
-                margin-top: 20px;
-                width: fit-content;
-                display: inline-block;
-                text-align: center;
-                white-space: nowrap;
+            .intro-area {
+                grid-row: 1;
+                grid-column: 2 / -1;
 
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                gap: 16px 24px;
+
+                .pinklogo {
+                    display: block;
+                    width: 32px;
+                    height: auto;
+                    margin: 0;
+                    grid-column: 1/-1;
+                    grid-row: 1;
+                }
+
+                h2 {
+                    font-size: 48px;
+                    line-height: 130%;
+                    text-align: left;
+                    grid-column: 1 / -1;
+                    grid-row: 2;
+                    white-space: normal;
+                    max-width: none;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 150%;
+                    text-align: left;
+                    grid-column: 1/-1;
+                    grid-row: 3;
+                    max-width: 460px;
+                }
+
+                .aboutMeBtn {
+                    grid-column: 1;
+                    grid-row: 4;
+
+                    border: #5E4A49 solid 1px;
+                    padding: 24px 32px;
+                    display: inline-block;
+                    text-align: center;
+                    white-space: nowrap;
+                    
+                    font-size: 20px;
+                    line-height: 150%;
+
+                }
+
+                .grayLogo {
+                    grid-column: 2;
+                    grid-row: 4;
+
+                   max-width: 180px;
+                   justify-self: center;
+                    margin: 0;
+                    transform: rotate(-9deg);
+                    
+                }
             }
 
-            .grayLogo {
-                width: 100%;
-                margin: 0;
-            }
-        }
-
-        .title-with-line {
+            .title-with-line {
             grid-column: 1/-1;
             grid-row: 2;
+            max-width: 800px;
+            width: 100%;
+        }
         }
 
-        .about-bottom {
-            grid-column: 1/-1;
-            grid-row: 3;
+        
 
+        .about-bottom {
 
             .brand-logos {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                display: grid;
+               grid-template-columns: repeat(9, 1fr);
+                justify-items: center;
                 align-items: center;
-                max-width: 1000px;
-                gap: 40px;
-
+                max-width: 800px;
+                gap:76.5px 30px;
             }
+
+            .mac {
+                max-width: 112px;
+            }
+
+            .lancome,.inglot,.Mercier {
+                max-height: 29px;
+            }
+
+            .Tilbury {max-height: 48px;}
+            .tarte {max-height: 32px;}
+            .anastasia {max-height: 65px;}
+            .kryolan {max-height: 55px;}
+
+            .mac {grid-column:1 / span 2; grid-row: 1; max-width: 130px;}
+            .lancome {grid-column:3 / span 2; grid-row: 1; max-width: 130px;}
+            .inglot {grid-column:5 / span 2; grid-row: 1;  max-width: 130px;}
+            .Mercier {grid-column:7 / span 2; grid-row: 1;  max-width: 130px;}
+
+            .Tilbury {grid-column:2 / span 2; grid-row: 2;}
+            .tarte {grid-column:4 / span 2; grid-row: 2; justify-self: left;}
+            .anastasia {grid-column:5 / span 2; grid-row: 2;}
+            .kryolan {grid-column:7 / span 2; grid-row: 2;justify-self: left}
+
         }
     }
 
@@ -1075,9 +1124,7 @@ a {
                 display: block;
                 min-width: 900px;
             }
-
         }
-
     }
 
     .makeup-101 {
@@ -1164,8 +1211,6 @@ a {
                 justify-self: right;
 
             }
-
-
 
         }
     }

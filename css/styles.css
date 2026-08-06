@@ -174,18 +174,18 @@ nav .header-logo {
   padding: 0 12px;
   white-space: nowrap;
 }
-.aboutArtist .about-top .brand-logos {
+.aboutArtist .about-bottom .brand-logos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 30px 50px;
+  gap: 30px 20px;
   width: 100%;
   max-width: 360px;
   margin: 20px auto;
 }
-.aboutArtist .about-top .brand-logos img {
-  opacity: 60%;
+.aboutArtist .about-bottom .brand-logos img {
+  opacity: 0.6;
   max-width: 95px;
   height: auto;
   object-fit: contain;
@@ -740,76 +740,144 @@ a {
   }
   .aboutArtist .about-top {
     display: grid;
-    grid-template-columns: 306px 1fr;
-    max-width: 1200px;
+    grid-template-columns: 360px 1fr;
+    max-width: 1000px;
     margin: 0 auto;
     gap: 40px;
+    align-items: center;
+    justify-content: center;
   }
   .aboutArtist .about-top .black-logo {
     display: none;
   }
-  .aboutArtist .portfolio {
+  .aboutArtist .about-top .portfolio {
     grid-column: 1;
     grid-row: 1;
+    justify-self: end;
+    max-width: 380px;
+    width: 100%;
   }
-  .aboutArtist .intro-area {
+  .aboutArtist .about-top .intro-area {
     grid-row: 1;
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: start;
-    text-align: left;
-    gap: 16px;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px 24px;
   }
-  .aboutArtist .intro-area .pinklogo {
+  .aboutArtist .about-top .intro-area .pinklogo {
     display: block;
     width: 32px;
     height: auto;
     margin: 0;
+    grid-column: 1/-1;
+    grid-row: 1;
   }
-  .aboutArtist .intro-area h2 {
+  .aboutArtist .about-top .intro-area h2 {
     font-size: 48px;
     line-height: 130%;
-    width: 100%;
     text-align: left;
-    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 2;
+    white-space: normal;
+    max-width: none;
   }
-  .aboutArtist .intro-area p {
+  .aboutArtist .about-top .intro-area p {
     font-size: 18px;
-    width: 100%;
     line-height: 150%;
     text-align: left;
-    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 3;
+    max-width: 460px;
   }
-  .aboutArtist .intro-area .aboutMeBtn {
+  .aboutArtist .about-top .intro-area .aboutMeBtn {
+    grid-column: 1;
+    grid-row: 4;
     border: #5E4A49 solid 1px;
-    padding: 20px 32px;
-    margin-top: 20px;
-    width: fit-content;
+    padding: 24px 32px;
     display: inline-block;
     text-align: center;
     white-space: nowrap;
+    font-size: 20px;
+    line-height: 150%;
   }
-  .aboutArtist .intro-area .grayLogo {
-    width: 100%;
+  .aboutArtist .about-top .intro-area .grayLogo {
+    grid-column: 2;
+    grid-row: 4;
+    max-width: 180px;
+    justify-self: center;
     margin: 0;
+    transform: rotate(-9deg);
   }
-  .aboutArtist .title-with-line {
+  .aboutArtist .about-top .title-with-line {
     grid-column: 1/-1;
     grid-row: 2;
-  }
-  .aboutArtist .about-bottom {
-    grid-column: 1/-1;
-    grid-row: 3;
+    max-width: 800px;
+    width: 100%;
   }
   .aboutArtist .about-bottom .brand-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
     align-items: center;
-    max-width: 1000px;
-    gap: 40px;
+    max-width: 800px;
+    gap: 76.5px 30px;
+  }
+  .aboutArtist .about-bottom .mac {
+    max-width: 112px;
+  }
+  .aboutArtist .about-bottom .lancome, .aboutArtist .about-bottom .inglot, .aboutArtist .about-bottom .Mercier {
+    max-height: 29px;
+  }
+  .aboutArtist .about-bottom .Tilbury {
+    max-height: 48px;
+  }
+  .aboutArtist .about-bottom .tarte {
+    max-height: 32px;
+  }
+  .aboutArtist .about-bottom .anastasia {
+    max-height: 65px;
+  }
+  .aboutArtist .about-bottom .kryolan {
+    max-height: 55px;
+  }
+  .aboutArtist .about-bottom .mac {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .lancome {
+    grid-column: 3/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .inglot {
+    grid-column: 5/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .Mercier {
+    grid-column: 7/span 2;
+    grid-row: 1;
+    max-width: 130px;
+  }
+  .aboutArtist .about-bottom .Tilbury {
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+  .aboutArtist .about-bottom .tarte {
+    grid-column: 4/span 2;
+    grid-row: 2;
+    justify-self: left;
+  }
+  .aboutArtist .about-bottom .anastasia {
+    grid-column: 5/span 2;
+    grid-row: 2;
+  }
+  .aboutArtist .about-bottom .kryolan {
+    grid-column: 7/span 2;
+    grid-row: 2;
+    justify-self: left;
   }
   .you-are-a-star {
     display: flex;
