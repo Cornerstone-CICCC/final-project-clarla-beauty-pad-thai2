@@ -141,10 +141,6 @@ ul li {
   font-size: 40px;
 }
 
-.font45 {
-  font-size: 45px;
-}
-
 .dark-grey {
   color: var(--dark-grey-color);
 }
@@ -306,10 +302,6 @@ form {
   padding-top: 1rem;
 }
 
-.padding1 {
-  padding: 1rem;
-}
-
 .bg-magnifying-glass {
   background-image: url("/images/magnifying-glass.png");
   background-size: 25px 25px;
@@ -359,19 +351,6 @@ form {
 
 .border-container {
   border: 1px solid var(--border-container);
-}
-
-.img-size70 {
-  height: 70px;
-  width: 70px;
-}
-
-#basicServices {
-  margin-top: 1rem;
-}
-
-#brideShareBtn {
-  margin: 3rem 0 1rem;
 }
 
 /* ---------- footer ---------- */
@@ -474,6 +453,10 @@ a {
     font-size: 30px;
   }
 
+  .font45 {
+    font-size: 45px;
+  }
+
   .marginB {
     margin-bottom: 5rem;
   }
@@ -516,6 +499,23 @@ a {
     margin: 3rem 0;
     cursor: pointer;
     font-size: 20px;
+  }
+
+  .img-size70 {
+    height: 70px;
+    width: 70px;
+  }
+
+  #basicServices {
+    margin-top: 1rem;
+  }
+
+  #brideShareBtn {
+    margin: 3rem 0 1rem;
+  }
+
+  .padding1 {
+    padding: 1rem;
   }
 }
 
@@ -567,6 +567,11 @@ a {
     width: 375px;
     height: 495px;
     margin-left: 8rem;
+  }
+
+  .makeup-img {
+    width: 100%;
+    height: auto;
   }
 
   .grid-classes {
@@ -685,6 +690,7 @@ a {
 
   .flex-phone {
     display: flex;
+    align-items: center;
     column-gap: 10px;
     font-size: 18px;
   }
@@ -778,5 +784,63 @@ a {
 
   .msg-area {
     width: 100%;
+  }
+
+  .font48 {
+    font-size: 48;
+  }
+
+  .font18D {
+    font-size: 18px;
+  }
+
+  .font40D {
+    font-size: 40px;
+  }
+
+  .font60 {
+    font-size: 60px;
+  }
+
+  .img-size96 {
+    height: 96px;
+    width: 96px;
+  }
+
+  .grid-share {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .grid-share #brideShareBtn {
+    margin: 0;
+  }
+
+  .flex-share {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+
+  .padding2D {
+    padding: 2rem;
+  }
+
+  .flex-button {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .font24D {
+    font-size: 24px;
+  }
+
+  .font14D {
+    font-size: 14px;
+  }
+
+  .font60 {
+    font-size: 60px;
   }
 }
