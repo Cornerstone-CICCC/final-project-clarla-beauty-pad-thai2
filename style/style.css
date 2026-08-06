@@ -202,15 +202,29 @@ ul li {
 
 #makeups {
   border-bottom: 1px solid var(--black-color);
-  width: 40%;
+  width: 100%;
   color: var(--black-color);
   text-align: center;
 }
 
 #hairstyles {
   border-bottom: 1px solid var(--classes-color);
-  width: 40%;
+  width: 100%;
   color: var(--classes-color);
+  text-align: center;
+}
+
+#makeups2 {
+  border-bottom: 1px solid var(--classes-color);
+  width: 100%;
+  color: var(--classes-color);
+  text-align: center;
+}
+
+#hairstyles2 {
+  border-bottom: 1px solid var(--black-color);
+  width: 100%;
+  color: var(--black-color);
   text-align: center;
 }
 
@@ -385,10 +399,6 @@ form {
 
 .justify-end {
   justify-self: end;
-}
-
-.justify-start {
-  justify-self: start;
 }
 
 .border-container {
@@ -594,8 +604,8 @@ a {
 
   .view-button {
     width: 160px;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -952,7 +962,7 @@ a {
 
   .grid-my-work {
     display: grid;
-    grid-template-columns: repeat(3, 0.25fr);
+    grid-template-columns: repeat(3, 340px);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-content: center;
@@ -966,5 +976,21 @@ a {
 
   .padding-makeup {
     padding: 2.5rem 4rem 1rem;
+  }
+
+  #makeups3 {
+    width: 40%;
+  }
+
+  #hairstyles3 {
+    width: 40%;
+  }
+
+  .justify-start {
+    justify-self: start;
+  }
+
+  .justify-endD {
+    justify-self: end;
   }
 }
