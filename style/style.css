@@ -234,6 +234,10 @@ ul li {
   padding-inline: 1rem;
 }
 
+.paddingI2 {
+  padding-inline: 2rem;
+}
+
 .border-pink {
   border: 1px solid var(--border-class-general);
 }
@@ -689,7 +693,7 @@ a {
     border: 0.8px solid var(--button-border-color);
     padding: 20px 0;
     width: 20rem;
-    margin: 0 0 3rem;
+    margin: 3rem 0 0;
     text-align: center;
     align-items: center;
   }
@@ -751,6 +755,10 @@ a {
 
   .marginXL {
     margin: 0 25rem;
+  }
+
+  .marginB1 {
+    margin-bottom: 1rem;
   }
 
   .marginB {
