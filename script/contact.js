@@ -1,6 +1,6 @@
 $(function () {
   //Add border, check icon and show button
-  $("#wedding").on("focus", function () {
+  $("#wedding").on("click", function () {
     $("#wedding").addClass("border-pink bg-check");
     $("#party").removeClass("border-pink bg-check");
     $("#photoshoot").removeClass("border-pink bg-check");
@@ -10,7 +10,7 @@ $(function () {
     $("#submitButton").hide();
   });
 
-  $("#party").on("focus", function () {
+  $("#party").on("click", function () {
     $("#party").addClass("border-pink bg-check");
     $("#wedding").removeClass("border-pink bg-check");
     $("#photoshoot").removeClass("border-pink bg-check");
@@ -20,7 +20,7 @@ $(function () {
     $("#submitButton").hide();
   });
 
-  $("#photoshoot").on("focus", function () {
+  $("#photoshoot").on("click", function () {
     $("#photoshoot").addClass("border-pink bg-check");
     $("#wedding").removeClass("border-pink bg-check");
     $("#party").removeClass("border-pink bg-check");
@@ -30,27 +30,27 @@ $(function () {
     $("#nextPartyButton").hide();
   });
 
-  $("#makeup").on("focus", function () {
+  $("#makeup").on("click", function () {
     $("#makeup").addClass("border-pink bg-check");
   });
 
-  $("#hairstyle").on("focus", function () {
+  $("#hairstyle").on("click", function () {
     $("#hairstyle").addClass("border-pink bg-check");
   });
 
-  $("#masterClass").on("focus", function () {
+  $("#masterClass").on("click", function () {
     $("#masterClass").addClass("border-pink bg-check");
     $("#workshop").removeClass("border-pink bg-check");
     $("#beginner").removeClass("border-pink bg-check");
   });
 
-  $("#workshop").on("focus", function () {
+  $("#workshop").on("click", function () {
     $("#workshop").addClass("border-pink bg-check");
     $("#masterClass").removeClass("border-pink bg-check");
     $("#beginner").removeClass("border-pink bg-check");
   });
 
-  $("#beginner").on("focus", function () {
+  $("#beginner").on("click", function () {
     $("#beginner").addClass("border-pink bg-check");
     $("#masterClass").removeClass("border-pink bg-check");
     $("#workshop").removeClass("border-pink bg-check");

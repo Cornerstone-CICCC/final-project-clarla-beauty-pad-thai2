@@ -12,6 +12,7 @@
   --bg-paper-white: #fbfafa;
   --msg-text: #a7a7a7;
   --border-container: #a06d67;
+  --input-text-color: #757575;
 }
 
 * {
@@ -366,6 +367,27 @@ form {
 
 .border-container {
   border: 1px solid var(--border-container);
+}
+
+.input-service {
+  background-color: var(--bg-paper-white);
+  width: 100%;
+  padding: 1rem;
+  color: var(--input-text-color);
+  cursor: pointer;
+}
+
+.input-class {
+  background-color: var(--bg-paper-white);
+  width: 100%;
+  padding: 1rem;
+  color: var(--input-text-color);
+  cursor: pointer;
+}
+
+.input-class > * {
+  background-color: var(--bg-paper-white);
+  color: var(--input-text-color);
 }
 
 /* ---------- footer ---------- */
@@ -868,5 +890,20 @@ a {
 
   .font60 {
     font-size: 60px;
+  }
+
+  .input-class {
+    height: 80px;
+    width: 200px;
+  }
+
+  input::placeholder {
+    white-space: normal;
+  }
+
+  .input-height {
+    height: 5rem;
+    /* padding: 0 1rem; */
+    text-align: center;
   }
 }
