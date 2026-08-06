@@ -27,6 +27,41 @@ submitBtn.addEventListener('click', (event) => {
     const selectedEventTypeValue = selectedEventType ? selectedEventType.value : 'Not selected';
 
     //2-2 event date
+    const eventDateInput = document.querySelector('#event-date');
+    const notDecidecDate = document.querySelector('#not-decided-date');
+
+    eventDateInput.addEventListener('focus', () => {
+        if(eventDateInput.disabled) return;
+
+        if('showPicker' in HTMLInputElement.prototype){
+            eventDateInput.showPicker();
+        }
+    });
+
+    notDecidecDate.addEventListener('change', (event) => {
+        if(event.target.checked){
+            eventDateInput.disabled = true;
+            eventDateInput.value = "";
+        } else {
+            eventDateInput.disabled = false;
+        }
+    });
+
+    submitBtn.addEventListener('click',(event) => {
+        event.preventDefault();
+
+        let finalDateValue = '';
+
+        if(notDecidecDate.checked){
+            finalDateValue = 'Not decided';
+        } else {
+            finalDateValue = eventDateInput.value !== '' ? eventDateInput.value : 'Not selected';
+        }
+
+        console.log('Event Date:', finalDateValue);
+    })
+
+
 
     //2-3 event time - ok
     const timeSelect = document.querySelector('#time');

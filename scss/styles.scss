@@ -677,6 +677,7 @@ nav {
                 font-size: 18px;
                 font-weight: 300;
                 border: #B99692 solid 1px;
+                background-color: #FBFAFA;
 
                 background-image: url('../src/home/calendar.png');
                 background-position: right 12px center;
@@ -1059,31 +1060,12 @@ a {
                 gap: 76.5px 30px;
             }
 
-            .mac {
-                max-width: 112px;
-            }
-
             .lancome,
             .inglot,
             .Mercier {
                 max-height: 29px;
             }
-
-            .Tilbury {
-                max-height: 48px;
-            }
-
-            .tarte {
-                max-height: 32px;
-            }
-
-            .anastasia {
-                max-height: 65px;
-            }
-
-            .kryolan {
-                max-height: 55px;
-            }
+            
 
             .mac {
                 grid-column: 1 / span 2;
@@ -1112,23 +1094,27 @@ a {
             .Tilbury {
                 grid-column: 2 / span 2;
                 grid-row: 2;
+                max-height: 48px;
             }
 
             .tarte {
                 grid-column: 4 / span 2;
                 grid-row: 2;
                 justify-self: left;
+                max-height: 32px;
             }
 
             .anastasia {
                 grid-column: 5 / span 2;
                 grid-row: 2;
+                max-height: 65px;
             }
 
             .kryolan {
                 grid-column: 7 / span 2;
                 grid-row: 2;
-                justify-self: left
+                justify-self: left;
+                max-height: 55px;
             }
 
         }
