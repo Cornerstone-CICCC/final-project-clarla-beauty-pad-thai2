@@ -69,7 +69,7 @@ $(function () {
     $("#smsNumber").hide();
   });
 
-  // Subtract extra person -- mobile
+  // Subtract extra person
   $(".sub-btn").on("click", function () {
     const target = $(this).data("target");
     let count = Number($(target).text()) || 0;
@@ -80,7 +80,7 @@ $(function () {
     }
   });
 
-  // Add extra person -- mobile
+  // Add extra person
   $(".add-btn").on("click", function () {
     const target = $(this).data("target");
     let count = Number($(target).text());

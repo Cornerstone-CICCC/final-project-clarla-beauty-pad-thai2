@@ -261,7 +261,16 @@ form {
 
 .flex-button {
   justify-self: center;
-  align-items: center;
+}
+
+.class-button {
+  font-size: 18px;
+  border: 0.8px solid var(--button-border-color);
+  padding: 20px 32px;
+  width: 100%;
+  margin: 3rem 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 .invisible {
@@ -409,17 +418,6 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-  }
-
-  .class-button {
-    display: inline-block;
-    font-size: 18px;
-    border: 0.8px solid var(--button-border-color);
-    padding: 20px 32px;
-    width: 80vw;
-    margin: 3rem 0;
-    text-align: center;
-    align-self: center;
   }
 
   .marginT {
@@ -690,14 +688,8 @@ a {
     width: 85%;
   }
 
-  .class-button-next {
-    display: inline-block;
-    font-size: 20px;
-    border: 0.8px solid var(--button-border-color);
-    padding: 20px 0;
-    width: 10rem;
-    margin: 3rem 0 0;
-    text-align: center;
+  .class-button {
+    width: 160px;
   }
 
   .grid-bridal {

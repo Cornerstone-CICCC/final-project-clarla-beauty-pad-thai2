@@ -77,7 +77,7 @@
 
           <!-- Service -->
           <div class="flex-col paddingI padding3">
-            <h2 class="baskervville marginT font32 marginT2">Bridal Service</h2>
+            <h2 class="baskervville marginT font32 marginT2">Service</h2>
 
             <div class="grid-event grid-bridal">
               <input
@@ -215,65 +215,22 @@
             </h2>
 
             <div class="mobile">
-              <!-- Groom -->
+              <!-- Woman -->
               <div class="grid-extra-person bg-paper-white">
-                <p class="baskervville bg-paper-white font20">Groom</p>
+                <p class="baskervville bg-paper-white font20">Woman</p>
 
                 <div class="flex-operator justify-end">
                   <button
                     class="operator-btn sub-btn"
-                    data-target="#groomTotal"
+                    data-target="#womanTotal"
                     type="button"
                   >
                     <span class="subtract"></span>
                   </button>
-                  <span id="groomTotal">0</span>
+                  <span id="womanTotal">0</span>
                   <button
                     class="operator-btn add-btn"
-                    data-target="#groomTotal"
-                    type="button"
-                  >
-                    <svg
-                      width="13"
-                      height="13"
-                      viewBox="0 0 13 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.5 0V13M0 6.5H13"
-                        stroke="#535353"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="flex-row paddingT bg-paper-white">
-                  <input type="checkbox" id="makeup" value="makeup" />
-                  <label class="bg-paper-white font18" for="makeup"
-                    >Makeup</label
-                  >
-                </div>
-              </div>
-
-              <!-- Bridesmaid-->
-              <div class="grid-extra-person bg-paper-white marginT-1">
-                <p class="baskervville bg-paper-white font20">Bridesmaid</p>
-
-                <div class="flex-operator justify-end">
-                  <button
-                    class="operator-btn sub-btn"
-                    data-target="#maidsTotal"
-                    type="button"
-                  >
-                    <span class="subtract"></span>
-                  </button>
-                  <span id="maidsTotal">0</span>
-                  <button
-                    class="operator-btn add-btn"
-                    data-target="#maidsTotal"
+                    data-target="#womanTotal"
                     type="button"
                   >
                     <svg
@@ -308,22 +265,22 @@
                 </div>
               </div>
 
-              <!-- Flowergirl -->
+              <!-- Man -->
               <div class="grid-extra-person bg-paper-white marginT-1">
-                <p class="baskervville bg-paper-white font20">Flower girl</p>
+                <p class="baskervville bg-paper-white font20">Man</p>
 
                 <div class="flex-operator justify-end">
                   <button
                     class="operator-btn sub-btn"
-                    data-target="#girlsTotal"
+                    data-target="#manTotal"
                     type="button"
                   >
                     <span class="subtract"></span>
                   </button>
-                  <span id="girlsTotal">0</span>
+                  <span id="manTotal">0</span>
                   <button
                     class="operator-btn add-btn"
-                    data-target="#girlsTotal"
+                    data-target="#manTotal"
                     type="button"
                   >
                     <svg
@@ -347,34 +304,75 @@
                   <input type="checkbox" id="makeup" value="makeup" />
                   <label class="bg-paper-white font18" for="makeup"
                     >Makeup</label
-                  >
-                </div>
-
-                <div class="flex-row paddingT bg-paper-white">
-                  <input type="checkbox" id="hairstyle" value="hairstyle" />
-                  <label class="bg-paper-white font18" for="hairstyle"
-                    >Hairstyle</label
                   >
                 </div>
               </div>
             </div>
 
-            <!-- Groom -->
+            <!-- Woman  -->
             <div class="grid-4col desktop">
-              <p class="baskervville font20 bg-paper-white">Groom</p>
+              <p class="baskervville font20 bg-paper-white">Woman</p>
 
-              <div class="flex-operator classes">
+              <div class="flex-operator">
                 <button
                   class="operator-btn sub-btn"
-                  data-target="#groomTotalD"
+                  data-target="#womanTotalD"
                   type="button"
                 >
                   <span class="subtract"></span>
                 </button>
-                <span id="groomTotalD">0</span>
+                <span id="womanTotalD">0</span>
                 <button
                   class="operator-btn add-btn"
-                  data-target="#groomTotalD"
+                  data-target="#womanTotalD"
+                  type="button"
+                >
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 0V13M0 6.5H13"
+                      stroke="#535353"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="flex-row bg-paper-white vert-line justify-end">
+                <input type="checkbox" id="hairstyle" value="hairstyle" />
+                <label class="bg-paper-white font18" for="hairstyle"
+                  >Hairstyle</label
+                >
+              </div>
+
+              <div class="flex-row bg-paper-white justify-end">
+                <input type="checkbox" id="makeup" value="makeup" />
+                <label class="bg-paper-white font18" for="makeup">Makeup</label>
+              </div>
+            </div>
+
+            <!-- Man -->
+            <div class="grid-4col desktop">
+              <p class="baskervville font20 bg-paper-white">Man</p>
+
+              <div class="flex-operator classes">
+                <button
+                  class="operator-btn sub-btn"
+                  data-target="#manTotalD"
+                  type="button"
+                >
+                  <span class="subtract"></span>
+                </button>
+                <span id="manTotalD">0</span>
+                <button
+                  class="operator-btn add-btn"
+                  data-target="#manTotalD"
                   type="button"
                 >
                   <svg
@@ -398,102 +396,6 @@
                 id="col-span"
                 class="flex-row bg-paper-white justify-end vert-line-big-space"
               >
-                <input type="checkbox" id="makeup" value="makeup" />
-                <label class="bg-paper-white font18" for="makeup">Makeup</label>
-              </div>
-            </div>
-
-            <!-- Bridesmaid -->
-            <div class="grid-4col desktop">
-              <p class="baskervville font20 bg-paper-white">Bridesmaid</p>
-
-              <div class="flex-operator">
-                <button
-                  class="operator-btn sub-btn"
-                  data-target="#maidsTotalD"
-                  type="button"
-                >
-                  <span class="subtract"></span>
-                </button>
-                <span id="maidsTotalD">0</span>
-                <button
-                  class="operator-btn add-btn"
-                  data-target="#maidsTotalD"
-                  type="button"
-                >
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0V13M0 6.5H13"
-                      stroke="#535353"
-                      stroke-width="1"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="flex-row bg-paper-white vert-line justify-end">
-                <input type="checkbox" id="hairstyle" value="hairstyle" />
-                <label class="bg-paper-white font18" for="hairstyle"
-                  >Hairstyle</label
-                >
-              </div>
-
-              <div class="flex-row bg-paper-white justify-end">
-                <input type="checkbox" id="makeup" value="makeup" />
-                <label class="bg-paper-white font18" for="makeup">Makeup</label>
-              </div>
-            </div>
-
-            <!-- Flower girls -->
-            <div class="grid-4col desktop">
-              <p class="baskervville font20 bg-paper-white">Flower girl</p>
-
-              <div class="flex-operator">
-                <button
-                  class="operator-btn sub-btn"
-                  data-target="#girlsTotalD"
-                  type="button"
-                >
-                  <span class="subtract"></span>
-                </button>
-                <span id="girlsTotalD">0</span>
-                <button
-                  class="operator-btn add-btn"
-                  data-target="#girlsTotalD"
-                  type="button"
-                >
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0V13M0 6.5H13"
-                      stroke="#535353"
-                      stroke-width="1"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="flex-row bg-paper-white vert-line justify-end">
-                <input type="checkbox" id="hairstyle" value="hairstyle" />
-                <label class="bg-paper-white font18" for="hairstyle"
-                  >Hairstyle</label
-                >
-              </div>
-
-              <div class="flex-row bg-paper-white justify-end">
                 <input type="checkbox" id="makeup" value="makeup" />
                 <label class="bg-paper-white font18" for="makeup">Makeup</label>
               </div>
