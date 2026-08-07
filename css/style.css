@@ -325,6 +325,16 @@ form {
   cursor: pointer;
 }
 
+.class-button-tip {
+  font-size: 18px;
+  border: 0.8px solid var(--button-border-color);
+  padding: 20px 32px;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
 .invisible {
   display: none;
 }
@@ -431,6 +441,25 @@ form {
   flex-direction: column;
   row-gap: 10px;
   align-self: start;
+}
+
+.grid-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 0;
+}
+
+.grid-5col > div {
+  font-family: "Baskervville";
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--classes-color);
+}
+
+#black-tag {
+  color: var(--txt-black-color);
 }
 
 /* ---------- footer ---------- */
@@ -789,7 +818,7 @@ a {
     margin-bottom: 1rem;
   }
 
-  .marginB {
+  .marginB2D {
     margin-bottom: 2rem;
   }
 
@@ -1042,5 +1071,19 @@ a {
 
   .invisibleD {
     display: none;
+  }
+
+  .grid-5col {
+    grid-template-columns: repeat(5, 88px);
+    padding-top: 4rem;
+    column-gap: 15px;
+  }
+
+  .grid-tips {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
   }
 }
