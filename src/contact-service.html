@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carla Beauty | Contact</title>
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/script/contact.js" async defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex-nav mobile">
+        <a href="#"
+          ><img
+            class="block header-icon"
+            src="/images/menu.png"
+            alt="menu icon"
+        /></a>
+        <a href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
+        <a href="#">
+          <img
+            class="block header-icon"
+            src="/images/instagram.png"
+            alt="instagram icon"
+        /></a>
+      </nav>
+
+      <nav class="flex-nav desktop">
+        <a href="#">Home</a>
+        <a href="#">My Work</a>
+        <a href="#">Services</a>
+        <a class="underline no-border" href="classes.html">Classes</a>
+        <a class="no-border" href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
+        <a href="#">Beauty Tips</a>
+        <a href="#">About</a>
+        <a href="contact-service.html">Contact</a>
+        <a class="no-border" href="#"
+          ><img
+            class="block no-border"
+            src="/images/instagram.png"
+            alt="instagram icon"
+        /></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-header">
+        <h1 class="baskervville marginSB">CONTACT</h1>
+        <img
+          class="width-img"
+          src="/images/pink-line.png"
+          alt="pink horizontal line"
+        />
+        <p class="font16">
+          Get a quote and book a free consultation for your special day or our
+          academy services
+        </p>
+
+        <div class="flex-contact-icon marginB-2 mobile">
+          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
+          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"
+            ><img src="/images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+
+        <div class="grid-3col marginB desktop marginT2">
+          <div class="flex-phone">
+            <img src="/images/phone.png" alt="phone icon" />
+            <span>+1 0000000000</span>
+          </div>
+
+          <div class="flex-phone">
+            <img src="/images/whatsapp.png" alt="whatsapp icon" />
+            <span>+1 0000000000</span>
+          </div>
+
+          <div class="flex-phone">
+            <img src="/images/instagram.png" alt="instagram icon" />
+            <span>carlabeatrizs_</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <form action="" class="classes marginLR marginT2">
+          <nav class="container-contact">
+            <a class="baskervville" id="services" href="contact-service.html"
+              >Services</a
+            >
+            <a class="baskervville" id="classes" href="contact-classes.html"
+              >Classes</a
+            >
+          </nav>
+          <div class="flex-col paddingI padding3">
+            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+              Event Type
+            </h2>
+
+            <div class="grid-event">
+              <div id="wedding" class="baskervville input-service font20">
+                Wedding
+              </div>
+
+              <div id="party" class="baskervville input-service font20">
+                Party
+              </div>
+
+              <div id="photoshoot" class="baskervville input-service font20">
+                Photoshoot
+              </div>
+            </div>
+
+            <div class="grid-date-time marginT2">
+              <div>
+                <h2 class="baskervville paddingL-1 marginT font32">
+                  Event Date
+                </h2>
+                <input
+                  id="eventDate"
+                  class="input-txt border-pink"
+                  type="date"
+                  name="date"
+                />
+                <div class="flex-row paddingT">
+                  <input type="checkbox" id="notDecided" value="notDecided" />
+                  <label for="notDecided">Not decided</label>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="baskervville paddingL-1 marginT font32">
+                  Event Time
+                </h2>
+                <select class="input-txt border-pink" name="timeEvent">
+                  <option value="fullDay">Full day</option>
+                  <option value="halfMorning">Half day - Morning</option>
+                  <option value="halfAfternoon">Half day - Afternoon</option>
+                  <option value="halfEvening">Half day - Evening</option>
+                </select>
+
+                <div class="flex-row paddingT">
+                  <input type="checkbox" id="notDecided" value="notDecided" />
+                  <label for="notDecided">Not decided</label>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+              Name
+            </h2>
+            <input
+              class="input-txt border-pink"
+              type="text"
+              name="yourName"
+              placeholder="Your name"
+            />
+
+            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+              Contact
+            </h2>
+            <div class="flex-row paddingL-1">
+              <input type="radio" id="call" value="call" name="contact" />
+              <label for="call">Call</label>
+            </div>
+
+            <div id="callNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="tel"
+                name="phoneNumber"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="whats" value="whatsapp" name="contact" />
+              <label for="whats">WhatsApp</label>
+            </div>
+
+            <div id="whatsNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="text"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="sms" value="sms" name="contact" />
+              <label for="sms">SMS</label>
+            </div>
+
+            <div id="smsNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="text"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="email" value="email" name="contact" />
+              <label for="email">Email</label>
+            </div>
+            <input
+              id="emailText"
+              class="input-txt border-pink invisible margin-1 marginY-15"
+              type="email"
+              placeholder="Your email"
+            />
+
+            <div id="call-bride" class="invisible">
+              <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+                When do you want us to call?
+              </h2>
+              <div class="flex-row paddingL-1">
+                <input type="radio" id="idm" value="idm" name="receive-call" />
+                <label for="idm">I don't mind</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="morning"
+                  value="morning"
+                  name="receive-call"
+                />
+                <label for="morning">Morning</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="afternoon"
+                  value="afternoon"
+                  name="receive-call"
+                />
+                <label for="afternoon">Afternoon</label>
+              </div>
+              <div class="flex-row paddingL-1 paddingT">
+                <input
+                  type="radio"
+                  id="evening"
+                  value="evening"
+                  name="receive-call"
+                />
+                <label for="evening">Evening</label>
+              </div>
+            </div>
+
+            <div id="nextWedButton" class="flex-button">
+              <a href="service-bride.html" class="baskervville class-button"
+                >Next</a
+              >
+            </div>
+
+            <div id="nextPartyButton" class="flex-button">
+              <a
+                href="service-party.html"
+                class="baskervville class-button class-button-next invisible"
+                >Next</a
+              >
+            </div>
+
+            <div id="submitButton" class="flex-button">
+              <button class="baskervville class-button invisible" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="flex-contact">
+        <img src="/images/logo.png" alt="Carla Beauty logo" />
+        <p class="marginLR paddingY">Expert makeup and hairstyle studio</p>
+        <div class="flex-contact-icon">
+          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
+          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"
+            ><img src="/images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="borderY">
+        <div class="grid-2col baskervville mobile">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a class="underline" href="classes.html">Classes</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact-service.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <nav class="flex-links desktop">
+          <a href="#">Home</a>
+          <a href="#">My Work</a>
+          <a href="#">Services</a>
+          <a class="underline" href="classes.html">Classes</a>
+          <a href="#">Beauty Tips</a>
+          <a href="#">About</a>
+          <a href="contact-service.html">Contact</a>
+        </nav>
+      </div>
+
+      <p class="copyright">Copyright 2024, Carla Beauty</p>
+    </footer>
+  </body>
+</html>

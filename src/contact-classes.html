@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carla Beauty | Contact</title>
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/script/contact.js" async defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex-nav mobile">
+        <a href="#"
+          ><img
+            class="block header-icon"
+            src="/images/menu.png"
+            alt="menu icon"
+        /></a>
+        <a href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
+        <a href="#">
+          <img
+            class="block header-icon"
+            src="/images/instagram.png"
+            alt="instagram icon"
+        /></a>
+      </nav>
+
+      <nav class="flex-nav desktop">
+        <a href="#">Home</a>
+        <a href="#">My Work</a>
+        <a href="#">Services</a>
+        <a class="underline no-border" href="classes.html">Classes</a>
+        <a class="no-border" href="#"
+          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+        /></a>
+        <a href="#">Beauty Tips</a>
+        <a href="#">About</a>
+        <a href="contact-service.html">Contact</a>
+        <a class="no-border" href="#"
+          ><img
+            class="block no-border"
+            src="/images/instagram.png"
+            alt="instagram icon"
+        /></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-header">
+        <h1 class="baskervville marginSB">CONTACT</h1>
+        <img
+          class="width-img"
+          src="/images/pink-line.png"
+          alt="pink horizontal line"
+        />
+        <p class="font16">
+          Get a quote and book a free consultation for your special day or our
+          academy services
+        </p>
+
+        <div class="flex-contact-icon marginB-2 mobile">
+          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
+          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"
+            ><img src="/images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+
+        <div class="grid-3col marginB desktop marginT2">
+          <div class="flex-phone">
+            <img src="/images/phone.png" alt="phone icon" />
+            <span>+1 0000000000</span>
+          </div>
+
+          <div class="flex-phone">
+            <img src="/images/whatsapp.png" alt="whatsapp icon" />
+            <span>+1 0000000000</span>
+          </div>
+
+          <div class="flex-phone">
+            <img src="/images/instagram.png" alt="instagram icon" />
+            <span>carlabeatrizs_</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <form action="classes-booked.html" class="classes marginLR marginT2">
+          <nav class="container-contact">
+            <a class="baskervville" id="services2" href="contact-service.html"
+              >Services</a
+            >
+            <a class="baskervville" id="classes2" href="contact-classes.html"
+              >Classes</a
+            >
+          </nav>
+
+          <div class="flex-col paddingI padding3">
+            <h2 class="baskervville marginT font32 marginT2">Class</h2>
+
+            <div class="grid-event">
+              <div id="masterClass" class="baskervville input-class font20">
+                <span>1</span>-on-<span>1</span> Master Subscription
+              </div>
+
+              <div id="workshop" class="baskervville input-class font20">
+                <span>1</span>-day Makeup workshop
+              </div>
+
+              <div id="beginner" class="baskervville input-class font20">
+                Self-Makeup beginner class
+              </div>
+            </div>
+
+            <div>
+              <h2 class="baskervville marginT font32 marginT2">Class Date</h2>
+              <p class="desktop">When would you like to take your class?</p>
+              <input
+                id="classDate"
+                class="input-txt border-pink marginT-1D"
+                type="date"
+                name="date"
+              />
+              <div class="flex-row paddingT">
+                <input type="checkbox" id="notMatter" value="notMatter" />
+                <label for="notMatter">Doesn't matter</label>
+              </div>
+            </div>
+
+            <h2 class="baskervville marginT font32 marginT2">Any questions?</h2>
+
+            <textarea
+              class="msg-area mobile"
+              name="message"
+              id="message"
+              cols="30"
+              rows="6"
+              placeholder="Your message"
+            ></textarea>
+
+            <textarea
+              class="msg-area desktop"
+              name="message"
+              id="message"
+              cols="50"
+              rows="4"
+              placeholder="Your message"
+            ></textarea>
+
+            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+              Name
+            </h2>
+            <input
+              class="input-txt border-pink"
+              type="text"
+              name="yourName"
+              placeholder="Your name"
+            />
+
+            <h2 class="baskervville paddingL-1 marginT font32 marginT2">
+              Contact
+            </h2>
+            <div class="flex-row paddingL-1">
+              <input type="radio" id="call" value="call" name="contact" />
+              <label for="call">Call</label>
+            </div>
+
+            <div id="callNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="tel"
+                name="phoneNumber"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="whats" value="whatsapp" name="contact" />
+              <label for="whats">WhatsApp</label>
+            </div>
+
+            <div id="whatsNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="text"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="sms" value="sms" name="contact" />
+              <label for="sms">SMS</label>
+            </div>
+
+            <div id="smsNumber" class="marginY-15 paddingL-1 invisible">
+              <select
+                class="input-txt country-code border-code"
+                name="countryCode"
+              >
+                <option value="canada">+1</option>
+                <option value="brazil">+55</option>
+                <option value="uk">+44</option></select
+              ><input
+                class="input-phone border-phone"
+                type="text"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="flex-row paddingL-1 paddingT">
+              <input type="radio" id="email" value="email" name="contact" />
+              <label for="email">Email</label>
+            </div>
+            <input
+              id="emailText"
+              class="input-txt border-pink invisible margin-1 marginY-15"
+              type="email"
+              placeholder="Your email"
+            />
+
+            <div id="submitButton" class="flex-button">
+              <button class="baskervville class-button" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="flex-contact">
+        <img src="/images/logo.png" alt="Carla Beauty logo" />
+        <p class="marginLR paddingY">Expert makeup and hairstyle studio</p>
+        <div class="flex-contact-icon">
+          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
+          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"
+            ><img src="/images/instagram.png" alt="instagram icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="borderY">
+        <div class="grid-2col baskervville mobile">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a class="underline" href="classes.html">Classes</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact-service.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <nav class="flex-links desktop">
+          <a href="#">Home</a>
+          <a href="#">My Work</a>
+          <a href="#">Services</a>
+          <a class="underline" href="classes.html">Classes</a>
+          <a href="#">Beauty Tips</a>
+          <a href="#">About</a>
+          <a href="contact-service.html">Contact</a>
+        </nav>
+      </div>
+
+      <p class="copyright">Copyright 2024, Carla Beauty</p>
+    </footer>
+  </body>
+</html>
