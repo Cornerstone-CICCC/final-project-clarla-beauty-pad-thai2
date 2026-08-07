@@ -462,6 +462,15 @@ form {
   color: var(--txt-black-color);
 }
 
+.txt-pink {
+  color: var(--vertical-line-menu-color);
+}
+
+.carla-img {
+  width: 100%;
+  height: auto;
+}
+
 /* ---------- footer ---------- */
 
 .flex-contact {
@@ -550,6 +559,10 @@ a {
     margin-top: 1rem;
   }
 
+  .marginT3M {
+    margin-top: 3rem;
+  }
+
   .margin-1 {
     margin: 1rem;
   }
@@ -560,6 +573,10 @@ a {
 
   .font30 {
     font-size: 30px;
+  }
+
+  .font33 {
+    font-size: 33px;
   }
 
   .font45 {
@@ -645,6 +662,15 @@ a {
   .model-service {
     width: 100%;
     height: auto;
+  }
+
+  .grid-brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 3rem 3rem;
   }
 }
 
