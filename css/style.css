@@ -238,7 +238,7 @@ ul li {
 }
 
 .bg-check {
-  background-image: url("/images/check.png");
+  background-image: url("/images/contact/check.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -354,7 +354,7 @@ form {
 }
 
 .bg-magnifying-glass {
-  background-image: url("/images/magnifying-glass.png");
+  background-image: url("/images/contact/magnifying-glass.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -612,6 +612,11 @@ a {
     display: flex;
     column-gap: 30px;
   }
+
+  .model-service {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 641px) {
@@ -644,6 +649,8 @@ a {
   .flex-nav a {
     padding-inline-end: 2.5rem;
     border-inline-end: 1px solid var(--vertical-line-menu-color);
+    font-family: "Baskervville";
+    font-size: 20px;
   }
 
   .flex-nav .no-border {
@@ -661,7 +668,7 @@ a {
   .model-img {
     width: 375px;
     height: 495px;
-    margin-left: 8rem;
+    margin-left: 12rem;
   }
 
   .model-service {
@@ -745,7 +752,7 @@ a {
     flex-direction: column;
     width: 375px;
     border: 1px solid var(--border-class-general);
-    margin-left: 8rem;
+    margin-left: 12rem;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
   }
@@ -989,12 +996,26 @@ a {
     padding: 2.5rem 4rem 1rem;
   }
 
-  #makeups3 {
+  #makeups {
     width: 40%;
   }
 
-  #hairstyles3 {
+  #hairstyles {
     width: 40%;
+  }
+
+  #hairstyles2 {
+    border-bottom: 1px solid var(--black-color);
+    width: 40%;
+    color: var(--black-color);
+    text-align: center;
+  }
+
+  #makeups2 {
+    border-bottom: 1px solid var(--classes-color);
+    width: 40%;
+    color: var(--classes-color);
+    text-align: center;
   }
 
   .justify-start {
@@ -1017,5 +1038,9 @@ a {
   .grid-party {
     display: grid;
     grid-template-columns: 0.55fr 1fr;
+  }
+
+  .invisibleD {
+    display: none;
   }
 }
