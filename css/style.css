@@ -1112,4 +1112,32 @@ a {
     justify-content: center;
     align-content: center;
   }
+
+  .font80 {
+    font-size: 80px;
+  }
+
+  .grid-founder {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem 3rem 0 0;
+    align-items: start;
+  }
+
+  .carla-img {
+    width: 351px;
+    height: 424px;
+    margin-left: 12rem;
+  }
+
+  .grid-brands-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 3rem 6rem;
+  }
 }
