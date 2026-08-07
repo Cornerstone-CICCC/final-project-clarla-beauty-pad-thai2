@@ -607,6 +607,11 @@ a {
     margin-top: 2rem;
     margin-bottom: 8rem;
   }
+
+  .flex-row-party {
+    display: flex;
+    column-gap: 30px;
+  }
 }
 
 @media (min-width: 641px) {
@@ -657,6 +662,12 @@ a {
     width: 375px;
     height: 495px;
     margin-left: 8rem;
+  }
+
+  .model-service {
+    width: 320px;
+    height: 380px;
+    margin-left: 12rem;
   }
 
   .makeup-img {
@@ -992,5 +1003,19 @@ a {
 
   .justify-endD {
     justify-self: end;
+  }
+
+  .grid-wedding {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+
+  .width-txt {
+    width: 50vw;
+  }
+
+  .grid-party {
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
   }
 }
