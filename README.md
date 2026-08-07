@@ -84,4 +84,4 @@ _Note: There are 8 pages, but the main ones are HOME, CLASSES, and CONTACT pages
   - Live demo of the deployed project  
   - Biggest struggles or challenges faced  
   - What you learned  
-  - Future improvements you would make  
+  - Future improvements you would make
