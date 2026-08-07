@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carla Beauty | Contact</title>
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,35 +23,41 @@
         <a href="#"
           ><img
             class="block header-icon"
-            src="/images/menu.png"
+            src="/images/menu/menu.png"
             alt="menu icon"
         /></a>
         <a href="#"
-          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+          ><img
+            class="block"
+            src="/images/menu/logo.png"
+            alt="Carla Beauty logo"
         /></a>
         <a href="#">
           <img
             class="block header-icon"
-            src="/images/instagram.png"
+            src="/images/menu/instagram.png"
             alt="instagram icon"
         /></a>
       </nav>
 
       <nav class="flex-nav desktop">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="portfolio-makeup.html">My Work</a>
-        <a href="#">Services</a>
-        <a class="underline no-border" href="classes.html">Classes</a>
+        <a href="services.html">Services</a>
+        <a class="no-border" href="classes.html">Classes</a>
         <a class="no-border" href="#"
-          ><img class="block" src="/images/logo.png" alt="Carla Beauty logo"
+          ><img
+            class="block"
+            src="/images/menu/logo.png"
+            alt="Carla Beauty logo"
         /></a>
-        <a href="#">Beauty Tips</a>
-        <a href="#">About</a>
-        <a href="contact-service.html">Contact</a>
+        <a href="tips.html">Beauty Tips</a>
+        <a href="about.html">About</a>
+        <a class="underline" href="contact-service.html">Contact</a>
         <a class="no-border" href="#"
           ><img
             class="block no-border"
-            src="/images/instagram.png"
+            src="/images/menu/instagram.png"
             alt="instagram icon"
         /></a>
       </nav>
@@ -62,7 +68,7 @@
         <h1 class="baskervville marginSB">CONTACT</h1>
         <img
           class="width-img"
-          src="/images/pink-line.png"
+          src="/images/menu/pink-line.png"
           alt="pink horizontal line"
         />
         <p class="font16">
@@ -71,26 +77,28 @@
         </p>
 
         <div class="flex-contact-icon marginB-2 mobile">
-          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
-          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"><img src="/images/menu/phone.png" alt="phone icon" /></a>
           <a href="#"
-            ><img src="/images/instagram.png" alt="instagram icon"
+            ><img src="/images/menu/whatsapp.png" alt="whatsapp icon"
+          /></a>
+          <a href="#"
+            ><img src="/images/menu/instagram.png" alt="instagram icon"
           /></a>
         </div>
 
         <div class="grid-3col marginB desktop marginT2">
           <div class="flex-phone">
-            <img src="/images/phone.png" alt="phone icon" />
+            <img src="/images/menu/phone.png" alt="phone icon" />
             <span>+1 0000000000</span>
           </div>
 
           <div class="flex-phone">
-            <img src="/images/whatsapp.png" alt="whatsapp icon" />
+            <img src="/images/menu/whatsapp.png" alt="whatsapp icon" />
             <span>+1 0000000000</span>
           </div>
 
           <div class="flex-phone">
-            <img src="/images/instagram.png" alt="instagram icon" />
+            <img src="/images/menu/instagram.png" alt="instagram icon" />
             <span>carlabeatrizs_</span>
           </div>
         </div>
@@ -283,20 +291,22 @@
             </div>
 
             <div id="nextWedButton" class="flex-button">
-              <a href="service-bride.html" class="baskervville class-button"
+              <a
+                href="service-bride.html"
+                class="baskervville class-button block"
                 >Next</a
               >
             </div>
 
-            <div id="nextPartyButton" class="flex-button invisible">
+            <div id="nextPartyButton" class="flex-button invisible invisibleD">
               <a
                 href="service-party.html"
-                class="baskervville class-button class-button-next"
+                class="baskervville class-button class-button-next block"
                 >Next</a
               >
             </div>
 
-            <div id="submitButton" class="flex-button invisible">
+            <div id="submitButton" class="flex-button invisible invisibleD">
               <button class="baskervville class-button" type="submit">
                 Submit
               </button>
@@ -308,13 +318,15 @@
 
     <footer>
       <div class="flex-contact">
-        <img src="/images/logo.png" alt="Carla Beauty logo" />
+        <img src="/images/menu/logo.png" alt="Carla Beauty logo" />
         <p class="marginLR paddingY">Expert makeup and hairstyle studio</p>
         <div class="flex-contact-icon">
-          <a href="#"><img src="/images/phone.png" alt="phone icon" /></a>
-          <a href="#"><img src="/images/whatsapp.png" alt="whatsapp icon" /></a>
+          <a href="#"><img src="/images/menu/phone.png" alt="phone icon" /></a>
           <a href="#"
-            ><img src="/images/instagram.png" alt="instagram icon"
+            ><img src="/images/menu/whatsapp.png" alt="whatsapp icon"
+          /></a>
+          <a href="#"
+            ><img src="/images/menu/instagram.png" alt="instagram icon"
           /></a>
         </div>
       </div>
@@ -322,27 +334,37 @@
       <div class="borderY">
         <div class="grid-2col baskervville mobile">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="portfolio-makeup.html">My Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a class="underline" href="classes.html">Classes</a></li>
+            <li><a class="baskervville" href="index.html">Home</a></li>
+            <li>
+              <a class="baskervville" href="portfolio-makeup.html">My Work</a>
+            </li>
+            <li><a class="baskervville" href="services.html">Services</a></li>
+            <li><a class="baskervville" href="classes.html">Classes</a></li>
           </ul>
 
           <ul>
-            <li><a href="#">Beauty Tips</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="contact-service.html">Contact</a></li>
+            <li><a class="baskervville" href="tips.html">Beauty Tips</a></li>
+            <li><a class="baskervville" href="about.html">About</a></li>
+            <li>
+              <a class="underline baskervville" href="contact-service.html"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
         <nav class="flex-links desktop">
-          <a href="#">Home</a>
-          <a href="portfolio-makeup.html">My Work</a>
-          <a href="#">Services</a>
-          <a class="underline" href="classes.html">Classes</a>
-          <a href="#">Beauty Tips</a>
-          <a href="#">About</a>
-          <a href="contact-service.html">Contact</a>
+          <a class="baskervville" href="index.html">Home</a>
+          <a class="baskervville" href="portfolio-makeup.html">My Work</a>
+          <a class="baskervville" href="services.html">Services</a>
+          <a class="baskervville" class="baskervville" href="classes.html"
+            >Classes</a
+          >
+          <a class="baskervville" href="tips.html">Beauty Tips</a>
+          <a class="baskervville" href="about.html">About</a>
+          <a class="underline baskervville" href="contact-service.html"
+            >Contact</a
+          >
         </nav>
       </div>
 

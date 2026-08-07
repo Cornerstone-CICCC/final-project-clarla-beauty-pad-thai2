@@ -238,7 +238,7 @@ ul li {
 }
 
 .bg-check {
-  background-image: url("/images/check.png");
+  background-image: url("/images/contact/check.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -325,6 +325,16 @@ form {
   cursor: pointer;
 }
 
+.class-button-tip {
+  font-size: 18px;
+  border: 0.8px solid var(--button-border-color);
+  padding: 20px 32px;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
 .invisible {
   display: none;
 }
@@ -354,7 +364,7 @@ form {
 }
 
 .bg-magnifying-glass {
-  background-image: url("/images/magnifying-glass.png");
+  background-image: url("/images/contact/magnifying-glass.png");
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: 95%;
@@ -431,6 +441,34 @@ form {
   flex-direction: column;
   row-gap: 10px;
   align-self: start;
+}
+
+.grid-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 0;
+}
+
+.grid-5col > div {
+  font-family: "Baskervville";
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--classes-color);
+}
+
+#black-tag {
+  color: var(--txt-black-color);
+}
+
+.txt-pink {
+  color: var(--vertical-line-menu-color);
+}
+
+.carla-img {
+  width: 100%;
+  height: auto;
 }
 
 /* ---------- footer ---------- */
@@ -521,6 +559,10 @@ a {
     margin-top: 1rem;
   }
 
+  .marginT3M {
+    margin-top: 3rem;
+  }
+
   .margin-1 {
     margin: 1rem;
   }
@@ -531,6 +573,10 @@ a {
 
   .font30 {
     font-size: 30px;
+  }
+
+  .font33 {
+    font-size: 33px;
   }
 
   .font45 {
@@ -612,6 +658,20 @@ a {
     display: flex;
     column-gap: 30px;
   }
+
+  .model-service {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 3rem 3rem;
+  }
 }
 
 @media (min-width: 641px) {
@@ -644,6 +704,8 @@ a {
   .flex-nav a {
     padding-inline-end: 2.5rem;
     border-inline-end: 1px solid var(--vertical-line-menu-color);
+    font-family: "Baskervville";
+    font-size: 20px;
   }
 
   .flex-nav .no-border {
@@ -661,7 +723,7 @@ a {
   .model-img {
     width: 375px;
     height: 495px;
-    margin-left: 8rem;
+    margin-left: 12rem;
   }
 
   .model-service {
@@ -745,7 +807,7 @@ a {
     flex-direction: column;
     width: 375px;
     border: 1px solid var(--border-class-general);
-    margin-left: 8rem;
+    margin-left: 12rem;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
   }
@@ -782,7 +844,7 @@ a {
     margin-bottom: 1rem;
   }
 
-  .marginB {
+  .marginB2D {
     margin-bottom: 2rem;
   }
 
@@ -989,12 +1051,26 @@ a {
     padding: 2.5rem 4rem 1rem;
   }
 
-  #makeups3 {
+  #makeups {
     width: 40%;
   }
 
-  #hairstyles3 {
+  #hairstyles {
     width: 40%;
+  }
+
+  #hairstyles2 {
+    border-bottom: 1px solid var(--black-color);
+    width: 40%;
+    color: var(--black-color);
+    text-align: center;
+  }
+
+  #makeups2 {
+    border-bottom: 1px solid var(--classes-color);
+    width: 40%;
+    color: var(--classes-color);
+    text-align: center;
   }
 
   .justify-start {
@@ -1017,5 +1093,51 @@ a {
   .grid-party {
     display: grid;
     grid-template-columns: 0.55fr 1fr;
+  }
+
+  .invisibleD {
+    display: none;
+  }
+
+  .grid-5col {
+    grid-template-columns: repeat(5, 88px);
+    padding-top: 4rem;
+    column-gap: 15px;
+  }
+
+  .grid-tips {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .font80 {
+    font-size: 80px;
+  }
+
+  .grid-founder {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem 3rem 0 0;
+    align-items: start;
+  }
+
+  .carla-img {
+    width: 351px;
+    height: 424px;
+    margin-left: 12rem;
+  }
+
+  .grid-brands-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 3rem 6rem;
   }
 }
